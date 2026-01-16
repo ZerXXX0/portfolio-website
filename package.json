@@ -7,7 +7,8 @@
     "dev": "next dev",
     "lint": "next lint",
     "server": "node server/index.js",
-    "start": "next start"
+    "start": "next start",
+    "start:container": "sh ./scripts/start.sh"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
