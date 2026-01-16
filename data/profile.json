@@ -1,0 +1,131 @@
+{
+  "name": "Ghozy Abdurrahman",
+  "headline": "Computer Science Student & AI Engineer",
+  "summary": "Computer Science undergraduate at Telkom University with a focus on AI-powered solutions across computer vision, NLP, and data-heavy web applications.",
+  "githubUsername": "ZerXXX0",
+  "experience": [
+    {
+      "role": "Practicum Assistant",
+      "company": "Informatics Laboratory, Telkom University",
+      "period": "2025 – Present",
+      "description": "Support undergraduate practicum sessions and keep the Informatics lab running smoothly.",
+      "highlights": [
+        "Guide students through practicum modules and answer in-session questions",
+        "Grade submissions for every module and keep LMS records current",
+        "Upload, version, and monitor practicum content on the LMS",
+        "Ensure the lab environment consistently meets operational standards"
+      ]
+    },
+    {
+      "role": "Laboratory Assistant",
+      "company": "Multimedia Laboratory, Telkom University",
+      "period": "2025 – Present",
+      "description": "Blend research and teaching responsibilities inside the multimedia programming track.",
+      "highlights": [
+        "Collaborate with fellow assistants on programming-focused research initiatives",
+        "Teach multimedia programming concepts with an emphasis on computer vision"
+      ]
+    },
+    {
+      "role": "Researcher (Focus Group Member)",
+      "company": "Artificial Intelligence Laboratory",
+      "period": "2024 – Present",
+      "description": "Drive applied AI research and competition-ready prototypes inside the lab's focus group.",
+      "highlights": [
+        "Conduct research in artificial intelligence, especially computer vision",
+        "Co-author research papers with lab teammates",
+        "Participate in national and international AI competitions"
+      ]
+    },
+    {
+      "role": "Study Group Member",
+      "company": "Artificial Intelligence Laboratory",
+      "period": "2023 – 2024",
+      "description": "Deepened foundational AI knowledge through a structured study group program.",
+      "highlights": [
+        "Explored core ML, NLP, and computer vision topics",
+        "Built an AI model as the group's final project"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Telkom University",
+      "degree": "Bachelor of Computer Science (Informatics)",
+      "period": "2023 – Present",
+      "description": "Coursework and research centered on artificial intelligence, computer vision, and scalable software systems."
+    },
+    {
+      "school": "IU International University of Applied Sciences",
+      "degree": "Bachelor of Science in Computer Science",
+      "period": "2022 – 2023",
+      "description": "Completed foundational CS curriculum with an emphasis on international collaboration and applied projects."
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Finalist",
+      "event": "Intellectra Machine Learning Competition",
+      "year": "2025",
+      "description": "Recognized for delivering a high-performing ML solution among national teams."
+    },
+    {
+      "title": "Finalist",
+      "event": "Digihack AI for Good: Empowering Innovation",
+      "year": "2025",
+      "description": "Showcased an AI-for-good prototype focused on social impact."
+    }
+  ],
+  "portfolio": [
+    {
+      "label": "GitHub Projects",
+      "url": "https://github.com/ZerXXX0",
+      "description": "Latest open-source experiments, competition code, and production-ready utilities."
+    }
+  ],
+  "skills": [
+    {
+      "title": "AI & Machine Learning",
+      "skills": [
+        { "name": "PyTorch", "level": 90 },
+        { "name": "Tensorflow", "level": 85 },
+        { "name": "Ultralytics", "level": 85 },
+        { "name": "Roboflow", "level": 84 },
+        { "name": "OpenCV", "level": 83 },
+        { "name": "Hugging Face", "level": 83 },
+        { "name": "Scikit-learn", "level": 82 }
+      ]
+    },
+    {
+      "title": "Web Development",
+      "skills": [
+        { "name": "Node.js", "level": 85 },
+        { "name": "React", "level": 82 },
+        { "name": "Streamlit", "level": 84 },
+        { "name": "Tailwind", "level": 84 },
+        { "name": "Next.js", "level": 80 },
+        { "name": "Laravel", "level": 75 },
+        { "name": "Django", "level": 75 },
+        { "name": "FastAPI", "level": 74 }
+      ]
+    },
+    {
+      "title": "Tools & Platforms",
+      "skills": [
+        { "name": "Git & GitHub", "level": 90 },
+        { "name": "Docker", "level": 80 },
+        { "name": "Figma", "level": 80 },
+        { "name": "Linux", "level": 75 },
+        { "name": "Android Studio", "level": 75 },
+        { "name": "Microsoft Azure", "level": 72 }
+      ]
+    }
+  ],
+  "contact": {
+    "email": "ghozyhernandez@gmail.com",
+    "location": "Bandung, Indonesia",
+    "github": "https://github.com/ZerXXX0",
+    "instagram": "https://instagram.com/zerx_photo",
+    "website": "https://ghozyabdurrahman.vercel.app/"
+  }
+}

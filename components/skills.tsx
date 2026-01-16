@@ -1,53 +1,44 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
+import type { SkillCategory } from "@/lib/profile"
 
-const skillCategories = [
-  {
-    title: "Programming Languages",
-    skills: [
-      { name: "Python", level: 90 },
-      { name: "Java", level: 80 },
-      { name: "JavaScript", level: 75 },
-      { name: "SQL", level: 70 },
-    ],
-  },
+type SkillsProps = {
+  skillCategories?: SkillCategory[]
+}
+
+const fallbackCategories: SkillCategory[] = [
   {
     title: "AI & Machine Learning",
     skills: [
-      { name: "PyTorch", level: 85 },
-      { name: "Computer Vision", level: 90 },
-      { name: "NLP", level: 80 },
-      { name: "Data Analysis", level: 85 },
+      { name: "TensorFlow", level: 85 },
+      { name: "PyTorch", level: 80 },
+      { name: "scikit-learn", level: 85 },
+      { name: "OpenCV", level: 80 },
+      { name: "Pandas & NumPy", level: 90 },
     ],
   },
   {
     title: "Web Development",
     skills: [
-      { name: "React", level: 75 },
-      { name: "Node.js", level: 70 },
-      { name: "Streamlit", level: 85 },
-      { name: "UI/UX Design", level: 80 },
-    ],
-  },
-  {
-    title: "Tools & Technologies",
-    skills: [
-      { name: "Git", level: 85 },
-      { name: "Docker", level: 70 },
-      { name: "Jupyter", level: 90 },
-      { name: "Photography", level: 85 },
+      { name: "Next.js", level: 80 },
+      { name: "React", level: 80 },
+      { name: "Tailwind CSS", level: 85 },
+      { name: "Node.js", level: 75 },
+      { name: "Express", level: 70 },
     ],
   },
 ]
 
-export function Skills() {
+export function Skills({ skillCategories = [] }: SkillsProps) {
+  const categories = skillCategories.length ? skillCategories : fallbackCategories
+
   return (
     <section id="skills" className="py-20 bg-muted">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12 font-sans">Skills & Expertise</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            {skillCategories.map((category, index) => (
+            {categories.map((category, index) => (
               <Card
                 key={index}
                 className="hover:scale-105 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-1 transition-all duration-300 group"

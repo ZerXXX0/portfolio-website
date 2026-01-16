@@ -1,0 +1,3 @@
+export const PROJECTS_DISPLAY_LIMIT = 10
+export const GITHUB_REPO_REFRESH_INTERVAL_MS = 60_000
+export const LOCAL_API_PORT = 4000

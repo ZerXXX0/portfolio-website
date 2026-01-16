@@ -3,9 +3,16 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
-import { Mail, MapPin, Github, Instagram } from "lucide-react"
+import { Mail, MapPin, Github, Instagram, Link } from "lucide-react"
+import type { ContactInfo } from "@/lib/profile"
 
-export function Contact() {
+type ContactProps = {
+  contact?: ContactInfo
+}
+
+export function Contact({ contact }: ContactProps) {
+  const { email, location, github, instagram, website } = contact || {}
+
   return (
     <section id="contact" className="py-20">
       <div className="container mx-auto px-4">
@@ -21,34 +28,42 @@ export function Contact() {
               <div className="space-y-4">
                 <div className="flex items-center gap-3 hover:translate-x-2 transition-transform duration-300 group">
                   <Mail className="w-5 h-5 text-secondary group-hover:scale-110 transition-transform duration-300" />
-                  <span>ghozyhernandez@gmail.com</span>
+                  <span>{email || "ghozyhernandez@gmail.com"}</span>
                 </div>
                 <div className="flex items-center gap-3 hover:translate-x-2 transition-transform duration-300 group">
                   <MapPin className="w-5 h-5 text-secondary group-hover:scale-110 transition-transform duration-300" />
-                  <span>Bandung, Indonesia</span>
+                  <span>{location || "Bandung, Indonesia"}</span>
                 </div>
                 <div className="flex items-center gap-3 hover:translate-x-2 transition-transform duration-300 group">
                   <Github className="w-5 h-5 text-secondary group-hover:scale-110 transition-transform duration-300" />
                   <a
-                    href="https://github.com/ZerXXX0"
+                    href={github || "https://github.com/ZerXXX0"}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-secondary hover:scale-105 transition-all duration-300"
                   >
-                    github.com/ZerXXX0
+                    {(github || "https://github.com/ZerXXX0").replace("https://", "")}
                   </a>
                 </div>
                 <div className="flex items-center gap-3 hover:translate-x-2 transition-transform duration-300 group">
                   <Instagram className="w-5 h-5 text-secondary group-hover:scale-110 transition-transform duration-300" />
                   <a
-                    href="https://instagram.com/zerx_photo"
+                    href={instagram || "https://instagram.com/zerx_photo"}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-secondary hover:scale-105 transition-all duration-300"
                   >
-                    @zerx_photo
+                    @{(instagram || "https://instagram.com/zerx_photo").split("/").pop()}
                   </a>
                 </div>
+                {website ? (
+                  <div className="flex items-center gap-3 hover:translate-x-2 transition-transform duration-300 group">
+                    <Link className="w-5 h-5 text-secondary group-hover:scale-110 transition-transform duration-300" />
+                    <a href={website} target="_blank" rel="noopener noreferrer" className="hover:text-secondary">
+                      {website.replace("https://", "")}
+                    </a>
+                  </div>
+                ) : null}
               </div>
             </div>
             <Card className="hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
