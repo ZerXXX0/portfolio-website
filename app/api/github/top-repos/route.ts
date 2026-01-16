@@ -1,12 +1,12 @@
-import { NextResponse } from "next/server"
+import { NextRequest, NextResponse } from "next/server"
 import { fetchGithubRepos, selectRecentRepos } from "@/server/github-service"
 
 export const runtime = "nodejs"
 export const dynamic = "force-dynamic"
 
-export async function GET(request: Request) {
+export async function GET(request: NextRequest) {
   try {
-    const { searchParams } = new URL(request.url)
+    const searchParams = request.nextUrl.searchParams
     const username = searchParams.get("username") || undefined
     const limit = Math.min(Math.max(Number(searchParams.get("limit")) || 10, 1), 50)
     const repos = await fetchGithubRepos(username)
