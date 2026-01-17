@@ -9,10 +9,13 @@ import { Achievements } from "@/components/achievements"
 import { PortfolioLinks } from "@/components/portfolio-links"
 import { aggregateLanguages, selectFeaturedRepos, withOwnerNames } from "@/lib/github"
 import { pinnedRepos } from "@/lib/site-config"
-import { getGithubProfile, getGithubRepos, getManualProfile, getPinnedRepos, getTopRepos } from "@/lib/api"
 import { PROJECTS_DISPLAY_LIMIT } from "@/lib/constants"
 import type { ManualProfile, SkillCategory } from "@/lib/profile"
 import type { GitHubRepo, GitHubUser } from "@/lib/github"
+
+// Import services directly for server-side rendering
+import { loadManualProfile } from "@/server/profile-service"
+import { fetchGithubProfile, fetchGithubRepos, fetchPinnedRepoFullNames, selectRecentRepos } from "@/server/github-service"
 
 export const dynamic = "force-dynamic"
 export const revalidate = 0
@@ -45,26 +48,42 @@ function mergeSkillCategories(manualCategories: SkillCategory[] = [], languages:
 export default async function Home() {
   let manualProfile: ManualProfile = fallbackProfile
   try {
-    manualProfile = await getManualProfile()
+    manualProfile = await loadManualProfile()
   } catch (error) {
     console.error("Failed to load manual CV profile", error)
   }
 
   let githubProfile: GitHubUser | null = null
   let repos: GitHubRepo[] = []
-  let topRepos: GitHubRepo[] = []
   let pinnedReposFromApi: GitHubRepo[] = []
+  
   try {
-    const [ghProfile, ghRepos, ghTopRepos, ghPinnedRepos] = await Promise.all([
-      getGithubProfile(),
-      getGithubRepos(),
-      getTopRepos(PROJECTS_DISPLAY_LIMIT),
-      getPinnedRepos(PROJECTS_DISPLAY_LIMIT),
+    // Fetch GitHub data directly from services
+    const [ghProfile, ghRepos] = await Promise.all([
+      fetchGithubProfile(),
+      fetchGithubRepos(),
     ])
     githubProfile = ghProfile
     repos = ghRepos
-    topRepos = ghTopRepos
-    pinnedReposFromApi = ghPinnedRepos
+    
+    // Get pinned repos
+    try {
+      const pinnedFullNames = await fetchPinnedRepoFullNames(undefined, PROJECTS_DISPLAY_LIMIT)
+      if (pinnedFullNames.length) {
+        const lookup = new Map(repos.map((repo) => [repo.full_name.toLowerCase(), repo]))
+        pinnedReposFromApi = pinnedFullNames
+          .map((fullName) => lookup.get(fullName.toLowerCase()))
+          .filter((repo): repo is GitHubRepo => repo !== undefined)
+          .slice(0, PROJECTS_DISPLAY_LIMIT)
+      }
+    } catch (pinnedError) {
+      console.warn("Failed to fetch pinned repos, using recent repos", pinnedError)
+    }
+    
+    // Fallback to recent repos if no pinned repos
+    if (!pinnedReposFromApi.length) {
+      pinnedReposFromApi = selectRecentRepos(repos, PROJECTS_DISPLAY_LIMIT)
+    }
   } catch (error) {
     console.error("Failed to load GitHub data", error)
   }
@@ -73,7 +92,7 @@ export default async function Home() {
   const featured = selectFeaturedRepos(reposWithOwner, PROJECTS_DISPLAY_LIMIT, pinnedRepos)
   const languages = aggregateLanguages(reposWithOwner, 8)
   const skills = mergeSkillCategories(manualProfile.skills, languages)
-  const projectRepos = pinnedReposFromApi.length ? pinnedReposFromApi : topRepos.length ? topRepos : featured
+  const projectRepos = pinnedReposFromApi.length ? pinnedReposFromApi : featured
 
   const heroName =
     manualProfile.name || githubProfile?.name || githubProfile?.login || manualProfile.githubUsername || "Portfolio"
