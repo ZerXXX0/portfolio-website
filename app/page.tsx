@@ -106,6 +106,7 @@ export default async function Home() {
         avatarUrl={githubProfile?.avatar_url}
         githubUrl={githubUrl}
         instagramUrl={manualProfile.contact.instagram}
+        linkedinUrl={manualProfile.contact.linkedin}
         email={manualProfile.contact.email}
         headline={manualProfile.headline}
       />

@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Github, Instagram, Mail } from "lucide-react"
+import { Github, Instagram, Linkedin, Mail } from "lucide-react"
 
 type HeroProps = {
   name: string
@@ -8,11 +8,12 @@ type HeroProps = {
   avatarUrl?: string
   githubUrl?: string
   instagramUrl?: string
+  linkedinUrl?: string
   email?: string
   headline?: string
 }
 
-export function Hero({ name, bio, avatarUrl, githubUrl, instagramUrl, email, headline }: HeroProps) {
+export function Hero({ name, bio, avatarUrl, githubUrl, instagramUrl, linkedinUrl, email, headline }: HeroProps) {
   return (
     <section className="min-h-screen flex items-center justify-center bg-primary text-primary-foreground py-[8vh] sm:py-[10vh] md:py-[12vh]">
       <div className="container mx-auto px-4 text-center">
@@ -71,6 +72,17 @@ export function Hero({ name, bio, avatarUrl, githubUrl, instagramUrl, email, hea
               >
                 <Instagram className="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" />
                 <span className="sr-only">Instagram</span>
+              </a>
+            )}
+            {linkedinUrl && (
+              <a
+                href={linkedinUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 hover:scale-110 hover:shadow-lg hover:backdrop-blur-sm transition-all duration-300 group"
+              >
+                <Linkedin className="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" />
+                <span className="sr-only">LinkedIn</span>
               </a>
             )}
             {(email || avatarUrl) && (

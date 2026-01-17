@@ -1,7 +1,7 @@
 {
   "name": "Ghozy Abdurrahman",
   "headline": "Computer Science Student & AI Engineer",
-  "summary": "Computer Science undergraduate at Telkom University with a focus on AI-powered solutions across computer vision, NLP, and data-heavy web applications.",
+  "summary": "Computer Science undergraduate at Telkom University with a focus on AI-powered solutions across computer vision, NLP, and data-heavy applications.",
   "githubUsername": "ZerXXX0",
   "experience": [
     {
@@ -27,7 +27,7 @@
       ]
     },
     {
-      "role": "Researcher (Focus Group Member)",
+      "role": "Focus Group Researcher",
       "company": "Artificial Intelligence Laboratory",
       "period": "2024 – Present",
       "description": "Drive applied AI research and competition-ready prototypes inside the lab's focus group.",
@@ -51,7 +51,7 @@
   "education": [
     {
       "school": "Telkom University",
-      "degree": "Bachelor of Computer Science (Informatics)",
+      "degree": "Bachelor of Computer in Informatics",
       "period": "2023 – Present",
       "description": "Coursework and research centered on artificial intelligence, computer vision, and scalable software systems."
     },
@@ -110,22 +110,35 @@
       ]
     },
     {
+      "title": "Mobile Development",
+      "skills": [
+        { "name": "React Native", "level": 75 },
+        { "name": "Flutter", "level": 70 },
+        { "name": "Kotlin", "level": 70 },
+        { "name": "Android SDK", "level": 75 }
+      ]
+    },
+    {
       "title": "Tools & Platforms",
       "skills": [
         { "name": "Git & GitHub", "level": 90 },
         { "name": "Docker", "level": 80 },
+        { "name": "Kaggle", "level": 70 },
+        { "name": "Google Colab", "level": 85 },
         { "name": "Figma", "level": 80 },
         { "name": "Linux", "level": 75 },
         { "name": "Android Studio", "level": 75 },
         { "name": "Microsoft Azure", "level": 72 }
       ]
     }
+    
   ],
   "contact": {
     "email": "ghozyhernandez@gmail.com",
     "location": "Bandung, Indonesia",
     "github": "https://github.com/ZerXXX0",
     "instagram": "https://instagram.com/zerx_photo",
+    "linkedin": "https://www.linkedin.com/in/muhammad-ghozy-abdurrahman/",
     "website": "https://ghozyabdurrahman.vercel.app/"
   }
 }

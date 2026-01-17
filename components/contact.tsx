@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
-import { Mail, MapPin, Github, Instagram, Link } from "lucide-react"
+import { Mail, MapPin, Github, Instagram, Linkedin, Link } from "lucide-react"
 import type { ContactInfo } from "@/lib/profile"
 
 type ContactProps = {
@@ -11,7 +11,7 @@ type ContactProps = {
 }
 
 export function Contact({ contact }: ContactProps) {
-  const { email, location, github, instagram, website } = contact || {}
+  const { email, location, github, instagram, linkedin, website } = contact || {}
 
   return (
     <section id="contact" className="py-20">
@@ -56,6 +56,19 @@ export function Contact({ contact }: ContactProps) {
                     @{(instagram || "https://instagram.com/zerx_photo").split("/").pop()}
                   </a>
                 </div>
+                {linkedin && (
+                  <div className="flex items-center gap-3 hover:translate-x-2 transition-transform duration-300 group">
+                    <Linkedin className="w-5 h-5 text-secondary group-hover:scale-110 transition-transform duration-300" />
+                    <a
+                      href={linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-secondary hover:scale-105 transition-all duration-300"
+                    >
+                      {linkedin.replace("https://www.linkedin.com/in/", "").replace("/", "")}
+                    </a>
+                  </div>
+                )}
                 {website ? (
                   <div className="flex items-center gap-3 hover:translate-x-2 transition-transform duration-300 group">
                     <Link className="w-5 h-5 text-secondary group-hover:scale-110 transition-transform duration-300" />

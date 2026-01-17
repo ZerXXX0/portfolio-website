@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Progress } from "@/components/ui/progress"
+import { Badge } from "@/components/ui/badge"
 import type { SkillCategory } from "@/lib/profile"
 
 type SkillsProps = {
@@ -36,35 +36,30 @@ export function Skills({ skillCategories = [] }: SkillsProps) {
     <section id="skills" className="py-20 bg-muted">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 font-sans">Skills & Expertise</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <h2 className="text-4xl font-bold text-center mb-12 font-sans">Tech Stack</h2>
+          <div className="flex flex-wrap justify-center gap-6">
             {categories.map((category, index) => (
               <Card
                 key={index}
-                className="hover:scale-105 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-1 transition-all duration-300 group"
+                className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-1 transition-all duration-300 group"
               >
-                <CardHeader>
-                  <CardTitle className="text-xl group-hover:text-primary transition-colors duration-300">
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-lg text-center group-hover:text-primary transition-colors duration-300">
                     {category.title}
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
-                  {category.skills.map((skill, skillIndex) => (
-                    <div key={skillIndex} className="space-y-2 group/skill">
-                      <div className="flex justify-between text-sm">
-                        <span className="font-medium group-hover/skill:text-primary transition-colors duration-200">
-                          {skill.name}
-                        </span>
-                        <span className="text-muted-foreground group-hover/skill:text-primary/70 transition-colors duration-200">
-                          {skill.level}%
-                        </span>
-                      </div>
-                      <Progress
-                        value={skill.level}
-                        className="h-2 group-hover/skill:scale-105 transition-transform duration-300 [&>div]:group-hover/skill:shadow-sm [&>div]:group-hover/skill:shadow-primary/50"
-                      />
-                    </div>
-                  ))}
+                <CardContent>
+                  <div className="flex flex-wrap justify-center gap-2">
+                    {category.skills.map((skill, skillIndex) => (
+                      <Badge
+                        key={skillIndex}
+                        variant="secondary"
+                        className="px-3 py-1.5 text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-colors duration-200 cursor-default"
+                      >
+                        {skill.name}
+                      </Badge>
+                    ))}
+                  </div>
                 </CardContent>
               </Card>
             ))}

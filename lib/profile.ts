@@ -41,6 +41,7 @@ export interface ContactInfo {
   location?: string
   github?: string
   instagram?: string
+  linkedin?: string
   website?: string
 }
 
