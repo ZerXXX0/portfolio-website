@@ -17,12 +17,15 @@ FROM node:20-alpine AS runner
 WORKDIR /app
 ENV NODE_ENV=production
 
-# Copy prepared app from builder
-COPY --from=builder /app .
-RUN chmod +x scripts/start.sh
+# Copy necessary files from builder
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/.next/standalone ./
+COPY --from=builder /app/.next/static ./.next/static
 
-# Expose Next.js (3000) and Express (4000)
+# Expose Next.js
 EXPOSE 3000
-EXPOSE 4000
 
-CMD ["npm", "run", "start:container"]
+ENV PORT=3000
+ENV HOSTNAME="0.0.0.0"
+
+CMD ["node", "server.js"]

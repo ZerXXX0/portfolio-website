@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { GitFork, Github, Loader2, Star } from "lucide-react"
-import { PROJECTS_DISPLAY_LIMIT, GITHUB_REPO_REFRESH_INTERVAL_MS, LOCAL_API_PORT } from "@/lib/constants"
+import { PROJECTS_DISPLAY_LIMIT, GITHUB_REPO_REFRESH_INTERVAL_MS } from "@/lib/constants"
 import type { GitHubRepo } from "@/lib/github"
 
 type ProjectsProps = {
@@ -27,14 +27,6 @@ export function Projects({ repos }: ProjectsProps) {
 
     const syncRepos = async () => {
       const apiBase = resolveApiBaseUrl()
-      if (!apiBase) {
-        if (process.env.NODE_ENV !== "production") {
-          console.warn(
-            "NEXT_PUBLIC_API_BASE_URL is not defined; set it to your Express API origin to enable live GitHub sync."
-          )
-        }
-        return
-      }
 
       currentController?.abort()
       const controller = new AbortController()
@@ -211,24 +203,7 @@ export function Projects({ repos }: ProjectsProps) {
   )
 }
 
-function resolveApiBaseUrl(): string | null {
-  const envBase = process.env.NEXT_PUBLIC_API_BASE_URL?.trim()
-  if (envBase && envBase.length) {
-    return envBase.endsWith("/") ? envBase.slice(0, -1) : envBase
-  }
-
-  if (typeof window === "undefined") {
-    return null
-  }
-
-  const { protocol, hostname } = window.location
-  if (!hostname) {
-    return null
-  }
-
-  if (hostname === "localhost" || hostname === "127.0.0.1") {
-    return `${protocol}//${hostname}:${LOCAL_API_PORT}`
-  }
-
-  return null
+function resolveApiBaseUrl(): string {
+  // Use Next.js API routes - works both locally and in production
+  return "/api"
 }

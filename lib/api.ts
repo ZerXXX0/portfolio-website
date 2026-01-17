@@ -1,29 +1,23 @@
 import type { ManualProfile } from "@/lib/profile"
 import type { GitHubRepo, GitHubUser } from "@/lib/github"
 
-function getInternalSiteUrl() {
+function getBaseUrl() {
   if (typeof window !== "undefined") {
+    // Client-side: use relative URLs
     return ""
   }
+  // Server-side: construct absolute URL
   const vercelUrl = process.env.VERCEL_URL
   if (vercelUrl) {
-    return vercelUrl.startsWith("http") ? vercelUrl : `https://${vercelUrl}`
+    return `https://${vercelUrl}`
   }
-  return process.env.INTERNAL_SITE_URL || "http://localhost:3000"
-}
-
-function getApiBaseUrl() {
-  const envBase = process.env.API_BASE_URL || process.env.NEXT_PUBLIC_API_BASE_URL
-  if (envBase) {
-    return envBase.endsWith("/") ? envBase.slice(0, -1) : envBase
-  }
-  return getInternalSiteUrl()
+  return process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
 }
 
 async function fetchFromApi<T>(path: string): Promise<T> {
   const normalizedPath = path.startsWith("/") ? path : `/${path}`
-  const base = getApiBaseUrl()
-  const target = base ? `${base}${normalizedPath}` : normalizedPath
+  const base = getBaseUrl()
+  const target = `${base}${normalizedPath}`
 
   const res = await fetch(target, {
     headers: { Accept: "application/json" },
