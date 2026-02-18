@@ -71,7 +71,7 @@ export default async function Home() {
       if (pinnedFullNames.length) {
         const lookup = new Map(repos.map((repo) => [repo.full_name.toLowerCase(), repo]))
         pinnedReposFromApi = pinnedFullNames
-          .map((fullName) => lookup.get(fullName.toLowerCase()))
+          .map((fullName: string) => lookup.get(fullName.toLowerCase()))
           .filter((repo): repo is GitHubRepo => repo !== undefined)
           .slice(0, PROJECTS_DISPLAY_LIMIT)
       }
