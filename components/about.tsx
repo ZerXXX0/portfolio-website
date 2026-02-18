@@ -59,7 +59,7 @@ export function About({ bio, company, summary, headline, location, stats }: Abou
                 <CardContent className="p-0">
                   <Brain className="w-8 h-8 mx-auto mb-3 text-secondary group-hover:scale-110 group-hover:rotate-6 transition-all duration-300" />
                   <h3 className="font-semibold mb-1">AI Focus</h3>
-                  <p className="text-sm text-muted-foreground">Machine Learning</p>
+                  <p className="text-sm text-muted-foreground">Computer Vision</p>
                 </CardContent>
               </Card>
               <Card className="text-center p-6 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20 hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
@@ -73,7 +73,7 @@ export function About({ bio, company, summary, headline, location, stats }: Abou
                 <CardContent className="p-0">
                   <Camera className="w-8 h-8 mx-auto mb-3 text-secondary group-hover:scale-110 group-hover:rotate-6 transition-all duration-300" />
                   <h3 className="font-semibold mb-1">Creative</h3>
-                  <p className="text-sm text-muted-foreground">Photography</p>
+                  <p className="text-sm text-muted-foreground">Photography & Graphic Design</p>
                 </CardContent>
               </Card>
             </div>

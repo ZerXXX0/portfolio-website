@@ -51,7 +51,6 @@ export function Projects({ repos }: ProjectsProps) {
       } catch (error) {
         if (!active) return
         if ((error as DOMException)?.name === "AbortError") return
-        console.error("Unable to refresh GitHub repos", error)
         setErrorMessage(ERROR_HINT)
       } finally {
         if (active) {

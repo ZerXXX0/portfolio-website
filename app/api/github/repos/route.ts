@@ -11,7 +11,6 @@ export async function GET(request: NextRequest) {
     const repos = await fetchGithubRepos(username)
     return NextResponse.json(repos)
   } catch (error) {
-    console.error("GitHub repos API error", error)
     return NextResponse.json({ message: "Failed to load GitHub repositories" }, { status: 500 })
   }
 }

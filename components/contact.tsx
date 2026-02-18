@@ -37,12 +37,12 @@ export function Contact({ contact }: ContactProps) {
                 <div className="flex items-center gap-3 hover:translate-x-2 transition-transform duration-300 group">
                   <Github className="w-5 h-5 text-secondary group-hover:scale-110 transition-transform duration-300" />
                   <a
-                    href={github || "https://github.com/ZerXXX0"}
+                    href={github || "https://github.com"}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-secondary hover:scale-105 transition-all duration-300"
                   >
-                    {(github || "https://github.com/ZerXXX0").replace("https://", "")}
+                    {(github || "https://github.com").replace("https://", "")}
                   </a>
                 </div>
                 <div className="flex items-center gap-3 hover:translate-x-2 transition-transform duration-300 group">

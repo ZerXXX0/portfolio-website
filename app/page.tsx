@@ -25,13 +25,13 @@ const fallbackProfile: ManualProfile = {
   headline: "Computer Science Student & AI Engineer",
   summary:
     "Computer Science undergraduate focused on deploying AI solutions that improve safety, accessibility, and productivity.",
-  githubUsername: "ZerXXX0",
+  githubUsername: process.env.GITHUB_USERNAME || "github-user",
   experience: [],
   skills: [],
   contact: {
     email: "ghozyhernandez@gmail.com",
     location: "Bandung, Indonesia",
-    github: "https://github.com/ZerXXX0",
+    github: process.env.GITHUB_USERNAME ? `https://github.com/${process.env.GITHUB_USERNAME}` : "https://github.com",
     instagram: "https://instagram.com/zerx_photo",
   },
 }
@@ -50,7 +50,6 @@ export default async function Home() {
   try {
     manualProfile = await loadManualProfile()
   } catch (error) {
-    console.error("Failed to load manual CV profile", error)
   }
 
   let githubProfile: GitHubUser | null = null
@@ -77,7 +76,6 @@ export default async function Home() {
           .slice(0, PROJECTS_DISPLAY_LIMIT)
       }
     } catch (pinnedError) {
-      console.warn("Failed to fetch pinned repos, using recent repos", pinnedError)
     }
     
     // Fallback to recent repos if no pinned repos
@@ -85,7 +83,6 @@ export default async function Home() {
       pinnedReposFromApi = selectRecentRepos(repos, PROJECTS_DISPLAY_LIMIT)
     }
   } catch (error) {
-    console.error("Failed to load GitHub data", error)
   }
 
   const reposWithOwner = withOwnerNames(repos)
@@ -96,7 +93,7 @@ export default async function Home() {
 
   const heroName =
     manualProfile.name || githubProfile?.name || githubProfile?.login || manualProfile.githubUsername || "Portfolio"
-  const githubUrl = manualProfile.contact.github || githubProfile?.html_url || "https://github.com/ZerXXX0"
+  const githubUrl = manualProfile.contact.github || githubProfile?.html_url || (process.env.GITHUB_USERNAME ? `https://github.com/${process.env.GITHUB_USERNAME}` : "https://github.com")
 
   return (
     <main className="min-h-screen">

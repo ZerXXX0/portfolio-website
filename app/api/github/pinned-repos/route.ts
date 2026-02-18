@@ -23,7 +23,6 @@ export async function GET(request: NextRequest) {
           .slice(0, limit)
       }
     } catch (error) {
-      console.warn("Pinned repo GraphQL fetch failed, falling back to recent repos", error)
     }
 
     if (!pinnedRepos.length) {
@@ -32,7 +31,6 @@ export async function GET(request: NextRequest) {
 
     return NextResponse.json(pinnedRepos)
   } catch (error) {
-    console.error("GitHub pinned repos API error", error)
     return NextResponse.json({ message: "Failed to load pinned repositories" }, { status: 500 })
   }
 }

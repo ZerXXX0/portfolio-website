@@ -13,7 +13,6 @@ export async function GET(request: NextRequest) {
     const topRepos = selectRecentRepos(repos, limit)
     return NextResponse.json(topRepos)
   } catch (error) {
-    console.error("GitHub top repos API error", error)
     return NextResponse.json({ message: "Failed to load featured repositories" }, { status: 500 })
   }
 }

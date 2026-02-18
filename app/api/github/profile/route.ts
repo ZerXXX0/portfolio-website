@@ -11,7 +11,6 @@ export async function GET(request: NextRequest) {
     const profile = await fetchGithubProfile(username)
     return NextResponse.json(profile)
   } catch (error) {
-    console.error("GitHub profile API error", error)
     return NextResponse.json({ message: "Failed to load GitHub profile" }, { status: 500 })
   }
 }
