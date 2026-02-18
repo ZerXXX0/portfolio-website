@@ -18,7 +18,7 @@ export async function GET(request: NextRequest) {
       if (pinnedFullNames.length) {
         const lookup = new Map(repos.map((repo) => [repo.full_name.toLowerCase(), repo]))
         pinnedRepos = pinnedFullNames
-          .map((fullName) => lookup.get(fullName.toLowerCase()))
+          .map((fullName: string) => lookup.get(fullName.toLowerCase()))
           .filter(Boolean)
           .slice(0, limit)
       }
