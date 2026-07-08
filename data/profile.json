@@ -1,50 +1,43 @@
 {
-  "name": "Ghozy Abdurrahman",
-  "headline": "Computer Science Student & AI Engineer",
-  "summary": "Computer Science undergraduate at Telkom University with a focus on AI-powered solutions across Computer Vision, NLP, and data-heavy applications.",
+  "name": "Muhammad Ghozy Abdurrahman",
+  "headline": "AI Engineer / Data Scientist",
+  "summary": "Hi! I'm just a curious student with passion in Artificial Intelligence and Software Development",
   "githubUsername": "ZerXXX0",
+  "avatarUrl": "https://avatars.githubusercontent.com/u/106439922?v=4",
+  "githubStats": {
+    "followers": 61,
+    "following": 73,
+    "publicRepos": 48
+  },
   "experience": [
     {
-      "role": "Practicum Assistant",
-      "company": "Informatics Laboratory, Telkom University",
-      "period": "2025 – Present",
-      "description": "Support undergraduate practicum sessions and keep the Informatics lab running smoothly.",
+      "role": "Researcher of Focus Group",
+      "company": "Artificial Intelligence Laboratory, Telkom University",
+      "period": "2024 – Present",
+      "description": "Collaborated on AI research projects, contributing to problem formulation, experimental design, and method development.",
       "highlights": [
-        "Guide students through practicum modules and answer in-session questions",
-        "Grade submissions for every module and keep LMS records current",
-        "Upload, version, and monitor practicum content on the LMS",
-        "Ensure the lab environment consistently meets operational standards"
+        "Conducted end-to-end research and produced scientific manuscripts for publication in peer-reviewed venues.",
+        "Applied and validated approaches through technology related competitions, benchmarking against state-of-the-art methods."
       ]
     },
     {
       "role": "Laboratory Assistant",
       "company": "Multimedia Laboratory, Telkom University",
       "period": "2025 – Present",
-      "description": "Blend research and teaching responsibilities inside the multimedia programming track.",
+      "description": "Collaborated with faculty and peers on computer vision research, contributing to experimental design and implementation.",
       "highlights": [
-        "Collaborate with fellow assistants on programming-focused research initiatives",
-        "Teach multimedia programming concepts with an emphasis on computer vision"
+        "Mentored study group members by teaching core computer vision concepts and providing technical guidance on projects and problem-solving."
       ]
     },
     {
-      "role": "Focus Group Researcher",
-      "company": "Artificial Intelligence Laboratory",
-      "period": "2024 – Present",
-      "description": "Drive applied AI research and competition-ready prototypes inside the lab's focus group.",
+      "role": "Practicum Assistant",
+      "company": "Informatics Laboratory, Telkom University",
+      "period": "2025 – Present",
+      "description": "Assisted students during practicums by explaining modules and addressing technical questions.",
       "highlights": [
-        "Conduct research in artificial intelligence, especially computer vision",
-        "Co-author research papers with lab teammates",
-        "Participate in national and international AI competitions"
-      ]
-    },
-    {
-      "role": "Study Group Member",
-      "company": "Artificial Intelligence Laboratory",
-      "period": "2023 – 2024",
-      "description": "Deepened foundational AI knowledge through a structured study group program.",
-      "highlights": [
-        "Explored core ML, NLP, and computer vision topics",
-        "Built an AI model as the group's final project"
+        "Evaluated and graded student work based on module requirements.",
+        "Managed and deployed practicum materials to the learning management system.",
+        "Maintained a structured and effective learning environment in line with academic standards."
       ]
     }
   ],
@@ -53,7 +46,7 @@
       "school": "Telkom University",
       "degree": "Bachelor of Computer in Informatics",
       "period": "2023 – Present",
-      "description": "Coursework and research centered on artificial intelligence, computer vision, and scalable software systems."
+      "description": "Major in Computer Science. GPA: 3.55 / 4.00. Coursework and research centered on artificial intelligence, computer vision, and scalable software systems."
     },
     {
       "school": "IU International University of Applied Sciences",
@@ -85,53 +78,186 @@
   ],
   "skills": [
     {
-      "title": "AI & Machine Learning",
+      "title": "Specialization & AI Core",
       "skills": [
-        { "name": "PyTorch", "level": 90 },
-        { "name": "Tensorflow", "level": 85 },
-        { "name": "Ultralytics", "level": 85 },
-        { "name": "Roboflow", "level": 84 },
-        { "name": "OpenCV", "level": 83 },
-        { "name": "Hugging Face", "level": 83 },
-        { "name": "Scikit-learn", "level": 82 }
+        {
+          "name": "Computer Vision",
+          "level": 92
+        },
+        {
+          "name": "NLP",
+          "level": 88
+        },
+        {
+          "name": "Multimodal AI",
+          "level": 90
+        },
+        {
+          "name": "Data Science",
+          "level": 88
+        },
+        {
+          "name": "Large Language Models",
+          "level": 85
+        },
+        {
+          "name": "RAG & AI Agents",
+          "level": 84
+        }
       ]
     },
     {
-      "title": "Web Development",
+      "title": "Programming Languages",
       "skills": [
-        { "name": "Node.js", "level": 85 },
-        { "name": "React", "level": 82 },
-        { "name": "Streamlit", "level": 84 },
-        { "name": "Tailwind", "level": 84 },
-        { "name": "Next.js", "level": 80 },
-        { "name": "Laravel", "level": 75 },
-        { "name": "Django", "level": 75 },
-        { "name": "FastAPI", "level": 74 }
+        {
+          "name": "Python",
+          "level": 95
+        },
+        {
+          "name": "SQL",
+          "level": 88
+        },
+        {
+          "name": "TypeScript",
+          "level": 85
+        },
+        {
+          "name": "JavaScript",
+          "level": 82
+        },
+        {
+          "name": "Java",
+          "level": 80
+        },
+        {
+          "name": "Dart",
+          "level": 80
+        },
+        {
+          "name": "Go",
+          "level": 75
+        },
+        {
+          "name": "PHP",
+          "level": 75
+        },
+        {
+          "name": "C/C++",
+          "level": 78
+        },
+        {
+          "name": "C#",
+          "level": 75
+        }
       ]
     },
     {
-      "title": "Mobile Development",
+      "title": "AI, LLMs & Frameworks",
       "skills": [
-        { "name": "React Native", "level": 75 },
-        { "name": "Flutter", "level": 70 },
-        { "name": "Kotlin", "level": 70 },
-        { "name": "Android SDK", "level": 75 }
+        {
+          "name": "PyTorch",
+          "level": 90
+        },
+        {
+          "name": "TensorFlow",
+          "level": 85
+        },
+        {
+          "name": "OpenCV",
+          "level": 88
+        },
+        {
+          "name": "Scikit-learn",
+          "level": 85
+        },
+        {
+          "name": "LangChain",
+          "level": 84
+        },
+        {
+          "name": "OpenAI & Gemini",
+          "level": 88
+        },
+        {
+          "name": "FastAPI & REST API",
+          "level": 88
+        },
+        {
+          "name": "Django & Flask",
+          "level": 82
+        },
+        {
+          "name": "Next.js & React",
+          "level": 82
+        },
+        {
+          "name": "Flutter & React Native",
+          "level": 80
+        }
       ]
     },
     {
-      "title": "Tools & Platforms",
+      "title": "Databases & DevOps Tools",
       "skills": [
-        { "name": "Git & GitHub", "level": 90 },
-        { "name": "Docker", "level": 80 },
-        { "name": "Kaggle", "level": 70 },
-        { "name": "Google Colab", "level": 85 },
-        { "name": "Figma", "level": 80 },
-        { "name": "Linux", "level": 75 },
-        { "name": "Android Studio", "level": 75 },
-        { "name": "Microsoft Azure", "level": 72 }
+        {
+          "name": "PostgreSQL & MySQL",
+          "level": 86
+        },
+        {
+          "name": "Supabase & Firebase",
+          "level": 85
+        },
+        {
+          "name": "Linux",
+          "level": 88
+        },
+        {
+          "name": "Docker",
+          "level": 82
+        },
+        {
+          "name": "Git & GitHub Actions",
+          "level": 90
+        },
+        {
+          "name": "Jupyter & Google Colab",
+          "level": 90
+        },
+        {
+          "name": "Kaggle",
+          "level": 80
+        },
+        {
+          "name": "Figma",
+          "level": 78
+        }
       ]
     }
-    
+  ],
+  "publications": [
+    {
+      "title": "A Comparative Analysis of YOLOv12 and RFDETR for Weapon Detection in CCTV Footage",
+      "publisher": "IEEE",
+      "date": "November 2025"
+    }
+  ],
+  "research": [
+    {
+      "title": "An Eye Blink Morse Code Decoder with Hybrid Vision Models and IndoBERT",
+      "status": "Accepted in ICoDSA 2026"
+    },
+    {
+      "title": "Performance Evaluation of YOLOv12 Variants for Trash Detection in Mountain Hiking Trail Environments",
+      "status": "Ongoing"
+    },
+    {
+      "title": "Firearm Detection Using a YOLO-Based and Vision-Language Model Approach for False Positive Reduction",
+      "status": "Ongoing"
+    },
+    {
+      "title": "Enhancing Early Tuberculosis Diagnosis Through Deep Learning-Based Medical Image Analysis",
+      "status": "Ongoing"
+    }
   ],
   "contact": {
     "email": "ghozyhernandez@gmail.com",

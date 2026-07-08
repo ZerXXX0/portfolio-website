@@ -42,19 +42,10 @@ export interface LanguageStat {
 
 export function selectFeaturedRepos(repos: GitHubRepo[], max = 6, pinned: string[] = []): GitHubRepo[] {
   const filtered = repos.filter((r) => !r.fork && !r.archived)
-  // Sort: pinned first, then by stars, then recent activity
-  const sorted = filtered.sort((a, b) => {
-    const aPinned = pinned.includes(a.name)
-    const bPinned = pinned.includes(b.name)
-    if (aPinned !== bPinned) return bPinned ? 1 : -1
-    if (b.stargazers_count !== a.stargazers_count) {
-      return b.stargazers_count - a.stargazers_count
-    }
-    const ap = Date.parse(a.pushed_at || a.updated_at || "1970-01-01")
-    const bp = Date.parse(b.pushed_at || b.updated_at || "1970-01-01")
-    return bp - ap
-  })
-  return sorted.slice(0, max)
+  const pinnedOnly = filtered.filter((r) => pinned.includes(r.name))
+  return pinnedOnly
+    .sort((a, b) => pinned.indexOf(a.name) - pinned.indexOf(b.name))
+    .slice(0, max)
 }
 
 export function aggregateLanguages(repos: GitHubRepo[], max = 8): LanguageStat[] {

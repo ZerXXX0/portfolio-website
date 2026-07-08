@@ -13,7 +13,7 @@ export function Experience({ experiences = [] }: ExperienceProps) {
     <section id="experience" className="py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 font-sans">Experience</h2>
+          <h2 className="text-4xl font-bold text-center mb-12 font-sans">Experience in Related Field</h2>
           <div className="space-y-6">
             {experiences.map((exp, index) => (
               <Card
@@ -32,15 +32,17 @@ export function Experience({ experiences = [] }: ExperienceProps) {
                     </CardDescription>
                   </div>
                 </CardHeader>
-                <CardContent className="space-y-4 text-muted-foreground">
-                  <p className="leading-relaxed text-base text-foreground/80">{exp.description}</p>
-                  {exp.highlights?.length ? (
-                    <ul className="list-disc list-inside space-y-1 text-sm">
-                      {exp.highlights.map((highlight, highlightIndex) => (
-                        <li key={highlightIndex}>{highlight}</li>
-                      ))}
-                    </ul>
-                  ) : null}
+                <CardContent className="pt-2">
+                  <ul className="list-disc pl-5 space-y-2 text-sm md:text-base text-zinc-600 dark:text-zinc-400">
+                    {exp.description && (
+                      <li className="leading-relaxed">{exp.description}</li>
+                    )}
+                    {exp.highlights?.map((highlight, highlightIndex) => (
+                      <li key={highlightIndex} className="leading-relaxed">
+                        {highlight}
+                      </li>
+                    ))}
+                  </ul>
                 </CardContent>
               </Card>
             ))}

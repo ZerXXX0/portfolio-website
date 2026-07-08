@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server"
-import { fetchGithubRepos, fetchPinnedRepoFullNames, selectRecentRepos } from "@/server/github-service"
+import { fetchGithubRepos, fetchPinnedRepoFullNames } from "@/server/github-service"
+import { pinnedRepos as localPinnedRepos } from "@/lib/site-config"
 
 export const runtime = "nodejs"
 export const dynamic = "force-dynamic"
@@ -26,7 +27,11 @@ export async function GET(request: NextRequest) {
     }
 
     if (!pinnedRepos.length) {
-      pinnedRepos = selectRecentRepos(repos, limit)
+      const lookup = new Map(repos.map((repo) => [repo.name.toLowerCase(), repo]))
+      pinnedRepos = localPinnedRepos
+        .map((name) => lookup.get(name.toLowerCase()))
+        .filter(Boolean)
+        .slice(0, limit)
     }
 
     return NextResponse.json(pinnedRepos)

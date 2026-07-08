@@ -122,11 +122,11 @@ export function Projects({ repos }: ProjectsProps) {
                     key={repo.full_name}
                     className="group hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary/20 transition-all duration-500"
                   >
-                    <div className="aspect-video overflow-hidden rounded-t-lg">
+                    <div className="aspect-video overflow-hidden rounded-t-lg bg-zinc-100 dark:bg-zinc-900">
                       <img
                         src={repo.full_name ? `https://opengraph.githubassets.com/1/${repo.full_name}` : "/placeholder.svg"}
                         alt={repo.name}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-all duration-500"
                         onError={(event) => {
                           event.currentTarget.src = "/placeholder.svg"
                         }}

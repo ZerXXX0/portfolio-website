@@ -1,3 +1,6 @@
+"use client"
+
+import React from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -12,6 +15,22 @@ type ContactProps = {
 
 export function Contact({ contact }: ContactProps) {
   const { email, location, github, instagram, linkedin, website } = contact || {}
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    const formData = new FormData(e.currentTarget)
+    const firstName = (formData.get("firstName") as string) || ""
+    const lastName = (formData.get("lastName") as string) || ""
+    const senderEmail = (formData.get("email") as string) || ""
+    const subject = (formData.get("subject") as string) || "Project Collaboration"
+    const message = (formData.get("message") as string) || ""
+
+    const fullName = `${firstName} ${lastName}`.trim()
+    const bodyText = `Hi Ghozy,\n\n${message}\n\nBest regards,\n${fullName}\nEmail: ${senderEmail}`
+
+    const mailtoUrl = `mailto:ghozyhernandez@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyText)}`
+    window.location.href = mailtoUrl
+  }
 
   return (
     <section id="contact" className="py-20">
@@ -37,10 +56,10 @@ export function Contact({ contact }: ContactProps) {
                 <div className="flex items-center gap-3 hover:translate-x-2 transition-transform duration-300 group">
                   <Github className="w-5 h-5 text-secondary group-hover:scale-110 transition-transform duration-300" />
                   <a
-                    href={github || "https://github.com"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-secondary hover:scale-105 transition-all duration-300"
+                     href={github || "https://github.com"}
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="hover:text-secondary hover:scale-105 transition-all duration-300"
                   >
                     {(github || "https://github.com").replace("https://", "")}
                   </a>
@@ -48,10 +67,10 @@ export function Contact({ contact }: ContactProps) {
                 <div className="flex items-center gap-3 hover:translate-x-2 transition-transform duration-300 group">
                   <Instagram className="w-5 h-5 text-secondary group-hover:scale-110 transition-transform duration-300" />
                   <a
-                    href={instagram || "https://instagram.com/zerx_photo"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-secondary hover:scale-105 transition-all duration-300"
+                     href={instagram || "https://instagram.com/zerx_photo"}
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="hover:text-secondary hover:scale-105 transition-all duration-300"
                   >
                     @{(instagram || "https://instagram.com/zerx_photo").split("/").pop()}
                   </a>
@@ -85,22 +104,26 @@ export function Contact({ contact }: ContactProps) {
                 <CardDescription>I'll get back to you as soon as possible.</CardDescription>
               </CardHeader>
               <CardContent>
-                <form className="space-y-4">
+                <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="firstName">First Name</Label>
                       <Input
                         id="firstName"
+                        name="firstName"
                         placeholder="John"
                         className="hover:border-primary/50 hover:shadow-sm transition-all duration-200"
+                        required
                       />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="lastName">Last Name</Label>
                       <Input
                         id="lastName"
+                        name="lastName"
                         placeholder="Doe"
                         className="hover:border-primary/50 hover:shadow-sm transition-all duration-200"
+                        required
                       />
                     </div>
                   </div>
@@ -108,26 +131,32 @@ export function Contact({ contact }: ContactProps) {
                     <Label htmlFor="email">Email</Label>
                     <Input
                       id="email"
+                      name="email"
                       type="email"
                       placeholder="john@example.com"
                       className="hover:border-primary/50 hover:shadow-sm transition-all duration-200"
+                      required
                     />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="subject">Subject</Label>
                     <Input
                       id="subject"
+                      name="subject"
                       placeholder="Project Collaboration"
                       className="hover:border-primary/50 hover:shadow-sm transition-all duration-200"
+                      required
                     />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="message">Message</Label>
                     <Textarea
                       id="message"
+                      name="message"
                       placeholder="Tell me about your project or idea..."
                       rows={4}
                       className="hover:border-primary/50 hover:shadow-sm transition-all duration-200"
+                      required
                     />
                   </div>
                   <Button type="submit" className="w-full hover:scale-105 hover:shadow-lg transition-all duration-300">

@@ -1,0 +1,240 @@
+{
+  "profilePicture": "/images/linkedin/profile_pic.jpg",
+  "projects": [
+    {
+      "title": "Morse Code to Eye Blink Decoder for Assistive Communication Web App",
+      "period": "Mar 2026 - Present",
+      "role": "Project Lead, AI Engineer",
+      "organization": "Artificial Intelligence Laboratory",
+      "description": "Developed an assistive communication system that translates Morse code generated through eye blinks into natural language text, enabling hands-free communication for individuals with severe speech and motor impairments.",
+      "skills": [
+        "Computer Vision",
+        "Deep Learning",
+        "Assistive Technology",
+        "Eye Blink Detection",
+        "Morse Code Decoding",
+        "Python"
+      ]
+    },
+    {
+      "title": "Weapon Detection with Vision-Language Model Validation for Intelligent Surveillance",
+      "period": "Mar 2026 - Present",
+      "role": "Researcher",
+      "organization": "Undergraduate Thesis Research",
+      "description": "Undergraduate thesis research focused on improving weapon detection reliability by integrating object detection models with Vision-Language Models (VLMs). Employed a two-stage pipeline where a detector identifies potential weapons, and a VLM performs contextual validation and reasoning to verify detections, reducing false positives.",
+      "skills": [
+        "Computer Vision",
+        "Vision-Language Models",
+        "Object Detection",
+        "Explainable AI",
+        "Intelligent Surveillance",
+        "Deep Learning"
+      ]
+    },
+    {
+      "title": "SehatMOK: Makan Olah Kelola \u2013 Smart Nutrition & Food Inventory Platform",
+      "period": "Feb 2026 - Jun 2026",
+      "role": "Mobile Developer and AI Engineer",
+      "organization": "Academic Project",
+      "description": "A health and nutrition management platform helping users track daily nutrition, manage food inventory, discover AI-generated recipes from available ingredients, plan meals, monitor hydration, and organize grocery lists. Integrated Google Gemini AI for recipe generation.",
+      "skills": [
+        "Flutter",
+        "Dart",
+        "Next.js",
+        "TypeScript",
+        "Prisma",
+        "MySQL",
+        "Google Gemini AI"
+      ]
+    },
+    {
+      "title": "EcoHike: Automatic Trash Monitoring System on Hiking Trail Mobile Application",
+      "period": "Nov 2025",
+      "role": "Project Leader",
+      "organization": "Research Project",
+      "description": "Offline-first mobile system for automatic waste detection on mountain hiking trails using YOLOv12. Enables real-time object detection directly on smartphones for hands-free field operation via chest strap without internet connectivity.",
+      "skills": [
+        "YOLOv12",
+        "Mobile Integration",
+        "Dataset Strategy",
+        "Computer Vision",
+        "Offline-first Mobile"
+      ]
+    },
+    {
+      "title": "AI-Driven Credit Risk Analysis for Microfinance and MSMEs in Indonesia",
+      "period": "Dec 2025",
+      "role": "Project Leader",
+      "organization": "Competition Project",
+      "description": "Led a data mining team analyzing credit risk patterns in Indonesia's microfinance and MSME (UMKM) sector, using AI-based approaches to identify risk factors.",
+      "skills": [
+        "Data Mining",
+        "Preprocessing",
+        "Feature Engineering",
+        "Model Evaluation",
+        "Credit Risk",
+        "AI"
+      ]
+    },
+    {
+      "title": "A Comparative Analysis of YOLOv12 and RF-DETR for Weapon Detection in CCTV Footage",
+      "period": "Feb 2025 - Nov 2025",
+      "role": "Researcher",
+      "organization": "Artificial Intelligence Laboratory",
+      "description": "Research exploring transformer-based RF-DETR against CNN-based YOLOv12 variants for weapon detection on CCTV surveillance footage. Published on IEEE Xplore, 5th ICSINTESA (November 2025).",
+      "skills": [
+        "YOLOv12",
+        "RF-DETR",
+        "Weapon Detection",
+        "CCTV Surveillance",
+        "IEEE Publication"
+      ]
+    },
+    {
+      "title": "MripatAI: Eye-Blink-Based Morse Code Communication with Adaptive Decoding and NLP-Driven Error Correction",
+      "period": "Sep 2025 - Oct 2025",
+      "role": "AI Engineer",
+      "organization": "Digihack AI for Good",
+      "description": "Assistive communication system translating eye blinks to Morse code using YOLOv12-cls for eye classification, adaptive threshold calibration, and IndoBERT for error correction.",
+      "skills": [
+        "YOLOv12-cls",
+        "IndoBERT",
+        "Adaptive Decoding",
+        "NLP Error Correction",
+        "Assistive Communication"
+      ]
+    },
+    {
+      "title": "System of a Road AI (SoaR AI) \u2013 Multimodal AI for Smart City Safety",
+      "period": "Jul 2025 - Sep 2025",
+      "role": "Team Leader & AI Engineer",
+      "organization": "Multimedia Lab",
+      "description": "AI-powered web-based system detecting traffic accidents, emergency vehicles, and fire incidents in real-time. Integrates YOLOv12-M for computer vision and CRNN for audio recognition.",
+      "skills": [
+        "Python",
+        "PyTorch",
+        "OpenCV",
+        "Streamlit",
+        "Altair",
+        "CRNN",
+        "Multimodal AI"
+      ]
+    },
+    {
+      "title": "Implementation of LightGBM for Predicting Formula Milk Sales Based on Sales Database",
+      "period": "Jun 2025 - Jul 2025",
+      "role": "Team Leader",
+      "organization": "Machine Learning Quest",
+      "description": "Sales prediction using LightGBM for inventory planning. Placed #4 in Machine Learning Quest.",
+      "skills": [
+        "LightGBM",
+        "Sales Prediction",
+        "Data Analysis",
+        "Machine Learning"
+      ]
+    },
+    {
+      "title": "Implementation of MobileViTV2 as an Efficient and Affordable Solution for Diagnosing the Severity Level of Diabetic Retinopathy",
+      "period": "Jun 2025 - Jul 2025",
+      "role": "Team Leader",
+      "organization": "Datathon UI",
+      "description": "Implemented MobileViTV2 to classify diabetic retinopathy severity from retinal images for Datathon UI.",
+      "skills": [
+        "MobileViTV2",
+        "Diabetic Retinopathy",
+        "Medical Image Analysis",
+        "Deep Learning"
+      ]
+    },
+    {
+      "title": "Riveria: AI Innovation Based on IoT and Computer Vision for Waste Collection and Sorting in Rivers",
+      "period": "May 2025 - Jul 2025",
+      "role": "AI Engineer",
+      "organization": "Samsung Solve for Tomorrow",
+      "description": "AI-powered environmental solution integrating IoT and computer vision using YOLOv12 and sensors. Top 200 in Samsung Solve for Tomorrow.",
+      "skills": [
+        "YOLOv12",
+        "IoT Sensors",
+        "Environmental Tech",
+        "Computer Vision"
+      ]
+    },
+    {
+      "title": "Assistify \u2013 Digital Personal Assistant Web Application",
+      "period": "Apr 2025 - Jun 2025",
+      "role": "Team Leader",
+      "organization": "Academic Project",
+      "description": "Web productivity application containing text & voice notes, to-do list, reminders, alarm, and journal.",
+      "skills": [
+        "Java Servlets",
+        "JSP",
+        "HTML/CSS",
+        "JavaScript",
+        "Apache Tomcat",
+        "MVC Architecture"
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "time": "1 month ago",
+      "content": "As my undergraduate journey almost comes to an end, I want to take a moment to express my gratitude to everyone who trusted me with opportunities to learn and grow outside the classroom.\nA special thank you to Himpunan Mahasiswa Informatika for entrusting me with various events throughout my university years. From serving as a Division Staff in Carnival 2024 and FORTRAN 2025 to being trusted twice as a Division Head in Carnival 2025 Vol. 1 and Vol. 2, each experience taught me valuable lessons in leadership, teamwork, responsibility, and commitment.\nI am also grateful to the Multimedia Laboratory for trusting me to become the Master of Ceremony for GameJAMM 2026, something I had never done before. What started as an unfamiliar challenge became one of the most memorable opportunities that pushed me beyond my comfort zone and helped me grow both personally and professionally.\nThank you to everyone who believed in me and gave me the chance to contribute. As this chapter comes to a close, I will carry these experiences, lessons, and memories with me into the next stage of my journey.\n#Grateful\n \n#Leadership\n \n#StudentLife\n \n#TelkomUniversity",
+      "category": "Academic & Leadership",
+      "images": [
+        "/images/linkedin/undergrad_1.jpg",
+        "/images/linkedin/undergrad_2.jpg",
+        "/images/linkedin/undergrad_3.jpg",
+        "/images/linkedin/undergrad_4.jpg"
+      ]
+    },
+    {
+      "time": "4 months ago",
+      "content": "I\u2019m excited to share that our paper \u201cA Comparative Analysis of YOLOv12 and RF-DETR for Weapon Detection in CCTV Footage\u201d has been published on IEEE Xplore by the IEEE.\nThis work explores the challenge of automated weapon detection in CCTV surveillance, where occlusion, varying viewpoints, and low-resolution imagery often impact detection performance. We compared YOLOv12 variants with the transformer-based RF-DETR model using challenging CCTV footage and evaluated generalization on an unseen camera viewpoint.\nThe results show that RF-DETR outperforms all YOLOv12 variants, highlighting the stronger robustness of transformer-based architectures for real-world surveillance scenarios.\nSpecial thanks to the team at the AI Laboratory for the collaboration and support throughout this research.\n \nMuhammad Syafiq Aqilla\n \nArnoldus Bryan Hendry\n \nMuhammad Rafly Arjasubrata\nOur paper is available here:\n \nhttps://lnkd.in/g7seGJpK\n#ComputerVision\n \n#DeepLearning\n \n#ObjectDetection\n \n#AIResearch\n \n#IEEE\n \n#YOLO\n \n#Transformers\n \n#PublicSafety",
+      "category": "Research & Publication",
+      "images": [
+        "/images/linkedin/paper_1.jpg",
+        "/images/linkedin/paper_2.jpg"
+      ]
+    },
+    {
+      "time": "8 months ago",
+      "content": "Grateful to share that I've received this Certificate of Appreciation for being a Top 50 Finalist in \"DigiHack 2025: AI for Good - Empowering Innovation with Telkom Group.\"\nThe theme \"AI for Good\" is particularly meaningful, and it was inspiring to be part of a national competition dedicated to creating impactful solutions. This was a challenging and rewarding experience spanning from August to October.\nA huge thank you to Telkom Indonesia and Digistar Club for organizing this event and fostering a community of innovators.\n#AIforGood\n \n#DigiHack2025\n \n#TelkomIndonesia\n \n#DigistarClub\n \n#SocialImpact\n \n#Innovation\n \n#ArtificialIntelligence\n \n#Hackathon\n \n#Top50",
+      "category": "Competition",
+      "images": [
+        "/images/linkedin/digihack_1.jpg"
+      ]
+    },
+    {
+      "time": "8 months ago",
+      "content": "Feeling incredibly grateful and excited for what's ahead!\nI'm thrilled to announce that I have been entrusted to continue my role as a Researcher at the Focus Group of AI Laboratory Telkom University for the 2025/2026 academic year. A huge thank you to the lab for the continued trust and support.\nThis news comes as my team and I celebrate a key achievement from my tenure in 2024/2025. Our research paper, \"A Comparative Analysis of YOLOv12 and RF-DETR for Weapon Detection in CCTV Footage,\" has been accepted for publication at the 2025 5th International Conference of Science and Information Technology in Smart Administration (ICSINTESA), an IEEE-sponsored conference.\nIn this work, we explored and compared cutting-edge AI models to enhance public safety through automated weapon detection in surveillance systems. This accomplishment would not have been possible without my brilliant co-authors:\n \nMuhammad Syafiq Aqilla\n,\n \nArnoldus Bryan Hendry\n,\n \nMuhammad Rafly Arjasubrata\n, and our esteemed mentor, Mr. Mahmud Dwi Sulistiyo.\nDeepest gratitude to AI Laboratory and Telkom University for providing the resources and environment to conduct impactful research. Looking forward to another year of learning and innovation!\n#AI\n \n#Research\n \n#IEEE\n \n#ICSINTESA2025\n \n#ComputerVision\n \n#ObjectDetection\n \n#TelkomUniversity\n \n#Publication\n \n#YOLOv12\n \n#DETR\n \n#AcademicExcellence",
+      "category": "Research & Academic",
+      "images": [
+        "/images/linkedin/research_1.jpg",
+        "/images/linkedin/research_2.jpg",
+        "/images/linkedin/research_3.jpg"
+      ]
+    },
+    {
+      "time": "8 months ago",
+      "content": "\ud83c\udf89 Proud to be a Finalist in the Intelligent Expression & Computational Thinking for Research and Application (INTELLECTRA) 2025\u00a0for Machine Learning Quest (MLQ) category \u2014 one of the most competitive and prestigious data-driven challenges in Indonesia!\nAlongside my incredible team, Tim Anomali, we tackled complex financial datasets and built quantitative models that pushed our analytical skills to the next level. Reaching the finals among top talents from across the country has been an exciting journey full of learning and innovation.\nGrateful to the organizers and mentors, and looking forward to applying what we\u2019ve learned to real-world problems. Onward and upward! \ud83d\ude80\ud83d\udcca\n#DataScience\n \n#CompetitionFinalist\n \n#TeamAnomali\n \n#LearningNeverStops",
+      "category": "Competition",
+      "images": [
+        "/images/linkedin/intellectra_1.jpg",
+        "/images/linkedin/intellectra_2.jpg",
+        "/images/linkedin/intellectra_3.jpg",
+        "/images/linkedin/intellectra_4.jpg"
+      ]
+    },
+    {
+      "time": "11 months ago",
+      "content": "\ud83d\udcf8 Capturing Moments, Creating Memories \ud83c\udf93\nAs the Head of Documentation & Publication for Carnival 2025, I had the incredible opportunity to lead a team of talented photographers in preserving the essence of the event. From fleeting expressions to grand celebrations, every snapshot tells a story\u2014one that reflects the spirit and energy of our campus community.\nGrateful for the teamwork, the vision, and the passion that fueled this project. Here's to the power of storytelling through the lens! \ud83d\udcf7\u2728\n#Photography\n \n#CampusEvent\n \n#StorytellingThroughPhotos\n \n#Leadership\n \n#Teamwork",
+      "category": "Academic & Leadership",
+      "images": [
+        "/images/linkedin/carnival_1.jpg",
+        "/images/linkedin/carnival_2.jpg",
+        "/images/linkedin/carnival_3.jpg",
+        "/images/linkedin/carnival_4.jpg"
+      ]
+    }
+  ]
+}

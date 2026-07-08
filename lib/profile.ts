@@ -45,15 +45,35 @@ export interface ContactInfo {
   website?: string
 }
 
+export interface PublicationItem {
+  title: string
+  publisher: string
+  date: string
+  url?: string
+}
+
+export interface ResearchItem {
+  title: string
+  status?: string
+}
+
 export interface ManualProfile {
   name?: string
   headline?: string
   summary?: string
   githubUsername?: string
+  avatarUrl?: string
+  githubStats?: {
+    followers: number
+    following: number
+    publicRepos: number
+  }
   experience: ExperienceItem[]
   skills: SkillCategory[]
   education?: EducationItem[]
   achievements?: AchievementItem[]
   portfolio?: PortfolioLink[]
+  publications?: PublicationItem[]
+  research?: ResearchItem[]
   contact: ContactInfo
 }

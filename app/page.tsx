@@ -7,6 +7,9 @@ import { Experience } from "@/components/experience"
 import { Education } from "@/components/education"
 import { Achievements } from "@/components/achievements"
 import { PortfolioLinks } from "@/components/portfolio-links"
+import { Research } from "@/components/research"
+import { LinkedinSection } from "@/components/linkedin"
+import linkedinData from "@/data/linkedin.json"
 import { aggregateLanguages, selectFeaturedRepos, withOwnerNames } from "@/lib/github"
 import { pinnedRepos } from "@/lib/site-config"
 import { PROJECTS_DISPLAY_LIMIT } from "@/lib/constants"
@@ -100,7 +103,7 @@ export default async function Home() {
       <Hero
         name={heroName}
         bio={githubProfile?.bio || manualProfile.summary}
-        avatarUrl={githubProfile?.avatar_url}
+        avatarUrl={githubProfile?.avatar_url || manualProfile.avatarUrl || linkedinData.profilePicture}
         githubUrl={githubUrl}
         instagramUrl={manualProfile.contact.instagram}
         linkedinUrl={manualProfile.contact.linkedin}
@@ -113,18 +116,24 @@ export default async function Home() {
         summary={manualProfile.summary}
         headline={manualProfile.headline}
         location={manualProfile.contact.location || githubProfile?.location || undefined}
-        stats={{
-          followers: githubProfile?.followers,
-          following: githubProfile?.following,
-          publicRepos: githubProfile?.public_repos,
-        }}
+        stats={
+          githubProfile && githubProfile.followers
+            ? {
+                followers: githubProfile.followers,
+                following: githubProfile.following ?? 0,
+                publicRepos: githubProfile.public_repos ?? 0,
+              }
+            : manualProfile.githubStats
+        }
       />
       <Experience experiences={manualProfile.experience} />
       <Education education={manualProfile.education} />
+      <Research publications={manualProfile.publications} research={manualProfile.research} />
       <Achievements achievements={manualProfile.achievements} />
       <Projects repos={projectRepos} />
       <Skills skillCategories={skills} />
       <PortfolioLinks links={manualProfile.portfolio} />
+      <LinkedinSection projects={linkedinData.projects} posts={linkedinData.posts} profilePicture={linkedinData.profilePicture} profileUrl={manualProfile.contact.linkedin} />
       <Contact contact={manualProfile.contact} />
     </main>
   )

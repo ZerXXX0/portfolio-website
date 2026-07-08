@@ -29,7 +29,7 @@ export function About({ bio, company, summary, headline, location, stats }: Abou
               </p>
               <p className="text-lg leading-relaxed">
                 {company
-                  ? `Currently at ${company}, working across computer vision, NLP, and full-stack development to bring ideas to life.`
+                  ? `Currently studying at ${company}, working across computer vision, NLP, and full-stack development to bring ideas to life.`
                   : "My work spans from computer vision systems for traffic safety to medical diagnostic tools. As a freelance designer and photography enthusiast, I bring a creative perspective to technical challenges."}
               </p>
               <div className="mt-6 grid grid-cols-2 gap-4 text-sm">
@@ -80,19 +80,19 @@ export function About({ bio, company, summary, headline, location, stats }: Abou
           </div>
           {stats ? (
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
-              <Card className="py-6">
+              <Card className="py-6 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20 hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
                 <CardContent className="p-0">
                   <p className="text-sm text-muted-foreground mb-1 uppercase tracking-wide">Followers</p>
                   <p className="text-3xl font-bold">{stats.followers ?? 0}</p>
                 </CardContent>
               </Card>
-              <Card className="py-6">
+              <Card className="py-6 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20 hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
                 <CardContent className="p-0">
                   <p className="text-sm text-muted-foreground mb-1 uppercase tracking-wide">Following</p>
                   <p className="text-3xl font-bold">{stats.following ?? 0}</p>
                 </CardContent>
               </Card>
-              <Card className="py-6">
+              <Card className="py-6 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20 hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
                 <CardContent className="p-0">
                   <p className="text-sm text-muted-foreground mb-1 uppercase tracking-wide">Public Repos</p>
                   <p className="text-3xl font-bold">{stats.publicRepos ?? 0}</p>

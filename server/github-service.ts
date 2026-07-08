@@ -1,7 +1,9 @@
 import { createGithubClient } from "@/server/github-client"
 import type { GitHubRepo, GitHubUser } from "@/lib/github"
 
-const DEFAULT_USERNAME = process.env.GITHUB_USERNAME || ""
+import profileData from "@/data/profile.json"
+
+const DEFAULT_USERNAME = process.env.GITHUB_USERNAME || profileData.githubUsername || "ZerXXX0"
 
 const PINNED_REPOS_QUERY = `
   query ($login: String!, $limit: Int!) {
