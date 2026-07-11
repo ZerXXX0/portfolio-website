@@ -56,6 +56,7 @@ const SKILL_ICONS: Record<string, string> = {
   "postgresql": "postgresql",
   "mysql": "mysql",
   "supabase": "supabase",
+  "firebase": "firebase",
   "sqlite": "sqlite",
 
   // Frontend & Mobile
@@ -94,13 +95,14 @@ function getIconSlug(name: string): string | null {
 
 const fallbackCategories: SkillCategory[] = [
   {
-    title: "AI & Machine Learning",
+    title: "AI and Machine Learning",
     skills: [
       { name: "TensorFlow", level: 85 },
       { name: "PyTorch", level: 80 },
       { name: "scikit-learn", level: 85 },
       { name: "OpenCV", level: 80 },
-      { name: "Pandas & NumPy", level: 90 },
+      { name: "Pandas", level: 90 },
+      { name: "NumPy", level: 90 },
     ],
   },
   {

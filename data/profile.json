@@ -32,7 +32,7 @@
     {
       "role": "Practicum Assistant",
       "company": "Informatics Laboratory, Telkom University",
-      "period": "2025 – Present",
+      "period": "2025 – 2026",
       "description": "Assisted students during practicums by explaining modules and addressing technical questions.",
       "highlights": [
         "Evaluated and graded student work based on module requirements.",
@@ -44,9 +44,9 @@
   "education": [
     {
       "school": "Telkom University",
-      "degree": "Bachelor of Computer in Informatics",
+      "degree": "Bachelor of Computer in Informatics (S. Kom)",
       "period": "2023 – Present",
-      "description": "Major in Computer Science. GPA: 3.55 / 4.00. Coursework and research centered on artificial intelligence, computer vision, and scalable software systems."
+      "description": "Major in Computer Science. GPA: 3.57 / 4.00. Coursework and research centered on artificial intelligence, computer vision, and scalable software systems."
     },
     {
       "school": "IU International University of Applied Sciences",
@@ -175,36 +175,60 @@
           "level": 84
         },
         {
-          "name": "OpenAI & Gemini",
+          "name": "OpenAI",
           "level": 88
         },
         {
-          "name": "FastAPI & REST API",
+          "name": "Gemini",
           "level": 88
         },
         {
-          "name": "Django & Flask",
+          "name": "FastAPI",
+          "level": 88
+        },
+        {
+          "name": "Django",
           "level": 82
         },
         {
-          "name": "Next.js & React",
+          "name": "Flask",
           "level": 82
         },
         {
-          "name": "Flutter & React Native",
+          "name": "Next.js",
+          "level": 82
+        },
+        {
+          "name": "React",
+          "level": 82
+        },
+        {
+          "name": "Flutter",
+          "level": 80
+        },
+        {
+          "name": "React Native",
           "level": 80
         }
       ]
     },
     {
-      "title": "Databases & DevOps Tools",
+      "title": "Databases and DevOps Tools",
       "skills": [
         {
-          "name": "PostgreSQL & MySQL",
+          "name": "PostgreSQL",
           "level": 86
         },
         {
-          "name": "Supabase & Firebase",
+          "name": "MySQL",
+          "level": 86
+        },
+        {
+          "name": "Supabase",
+          "level": 85
+        },
+        {
+          "name": "Firebase",
           "level": 85
         },
         {
@@ -216,11 +240,19 @@
           "level": 82
         },
         {
-          "name": "Git & GitHub Actions",
+          "name": "Git",
           "level": 90
         },
         {
-          "name": "Jupyter & Google Colab",
+          "name": "GitHub Actions",
+          "level": 90
+        },
+        {
+          "name": "Jupyter",
+          "level": 90
+        },
+        {
+          "name": "Google Colab",
           "level": 90
         },
         {
@@ -237,7 +269,7 @@
   "publications": [
     {
       "title": "A Comparative Analysis of YOLOv12 and RFDETR for Weapon Detection in CCTV Footage",
-      "publisher": "IEEE",
+      "publisher": "IEEE ICSINTESA 2025",
       "date": "November 2025"
     }
   ],

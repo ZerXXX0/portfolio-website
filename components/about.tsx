@@ -29,7 +29,7 @@ export function About({ bio, company, summary, headline, location, stats }: Abou
               </p>
               <p className="text-lg leading-relaxed">
                 {company
-                  ? `Currently studying at ${company}, working across computer vision, NLP, and full-stack development to bring ideas to life.`
+                  ? `Currently studying at ${company}, working across Computer Vision, NLP, Multimodal AI, Data Science, and Full Stack Development to bring ideas to life.`
                   : "My work spans from computer vision systems for traffic safety to medical diagnostic tools. As a freelance designer and photography enthusiast, I bring a creative perspective to technical challenges."}
               </p>
               <div className="mt-6 grid grid-cols-2 gap-4 text-sm">
@@ -58,8 +58,8 @@ export function About({ bio, company, summary, headline, location, stats }: Abou
               <Card className="text-center p-6 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20 hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
                 <CardContent className="p-0">
                   <Brain className="w-8 h-8 mx-auto mb-3 text-secondary group-hover:scale-110 group-hover:rotate-6 transition-all duration-300" />
-                  <h3 className="font-semibold mb-1">AI Focus</h3>
-                  <p className="text-sm text-muted-foreground">Computer Vision</p>
+                  <h3 className="font-semibold mb-1">AI Interests</h3>
+                  <p className="text-sm text-muted-foreground">Computer Vision, NLP, Multimodal AI, Data Science</p>
                 </CardContent>
               </Card>
               <Card className="text-center p-6 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20 hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
