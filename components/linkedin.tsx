@@ -141,6 +141,35 @@ function PostImages({ images, onImageClick }: PostImagesProps) {
   )
 }
 
+interface ExpandableTextProps {
+  text: string
+  maxLength?: number
+  className?: string
+}
+
+function ExpandableText({ text, maxLength = 260, className = "" }: ExpandableTextProps) {
+  const [isExpanded, setIsExpanded] = useState(false)
+  const shouldTruncate = text.length > maxLength
+
+  if (!shouldTruncate) {
+    return <p className={className}>{text}</p>
+  }
+
+  return (
+    <div className={className}>
+      <p className="inline">
+        {isExpanded ? text : `${text.slice(0, maxLength).trim()}... `}
+      </p>
+      <button
+        onClick={() => setIsExpanded(!isExpanded)}
+        className="inline font-semibold text-zinc-500 hover:text-black dark:text-zinc-400 dark:hover:text-white ml-1 text-xs cursor-pointer transition-colors"
+      >
+        {isExpanded ? "show less" : "...more"}
+      </button>
+    </div>
+  )
+}
+
 export function LinkedinSection({ 
   projects = [], 
   posts = [], 
@@ -236,9 +265,11 @@ export function LinkedinSection({
                     </CardHeader>
                     <CardContent className="flex-1 flex flex-col justify-between pt-0">
                       {proj.description && (
-                        <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                          {proj.description}
-                        </p>
+                        <ExpandableText
+                          text={proj.description}
+                          maxLength={200}
+                          className="text-sm text-muted-foreground leading-relaxed mb-6 whitespace-pre-wrap"
+                        />
                       )}
                       {proj.skills && proj.skills.length > 0 && (
                         <div className="flex flex-wrap gap-1.5 mt-auto">
@@ -299,9 +330,11 @@ export function LinkedinSection({
                       </div>
                     </CardHeader>
                     <CardContent className="pt-5 flex flex-col gap-4">
-                      <p className="text-sm md:text-base text-zinc-800 dark:text-zinc-200 whitespace-pre-wrap leading-relaxed">
-                        {post.content}
-                      </p>
+                      <ExpandableText
+                        text={post.content}
+                        maxLength={280}
+                        className="text-sm md:text-base text-zinc-800 dark:text-zinc-200 whitespace-pre-wrap leading-relaxed"
+                      />
                       <PostImages images={post.images} onImageClick={openLightbox} />
                     </CardContent>
                   </Card>
