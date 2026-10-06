@@ -2,26 +2,11 @@
   "profilePicture": "/images/linkedin/profile_pic.jpg",
   "projects": [
     {
-      "title": "Morse Code to Eye Blink Decoder for Assistive Communication Web App",
-      "period": "Mar 2026 - Present",
-      "role": "Project Lead, AI Engineer",
-      "organization": "Artificial Intelligence Laboratory",
-      "description": "Developed an assistive communication system that translates Morse code generated through eye blinks into natural language text, enabling hands-free communication for individuals with severe speech and motor impairments.",
-      "skills": [
-        "Computer Vision",
-        "Deep Learning",
-        "Assistive Technology",
-        "Eye Blink Detection",
-        "Morse Code Decoding",
-        "Python"
-      ]
-    },
-    {
       "title": "Weapon Detection with Vision-Language Model Validation for Intelligent Surveillance",
-      "period": "Mar 2026 - Present",
+      "period": "Mar 2026 – Present",
       "role": "Researcher",
-      "organization": "Undergraduate Thesis Research",
-      "description": "Undergraduate thesis research focused on improving weapon detection reliability by integrating object detection models with Vision-Language Models (VLMs). Employed a two-stage pipeline where a detector identifies potential weapons, and a VLM performs contextual validation and reasoning to verify detections, reducing false positives.",
+      "organization": "Telkom University",
+      "description": "Undergraduate thesis research focused on improving weapon detection reliability by integrating object detection models with Vision-Language Models (VLMs). The proposed framework employs a two-stage pipeline where a detector identifies potential weapons, and a VLM performs contextual validation and reasoning to verify detections, reducing false positives and enhancing explainability.\n\nThe study investigates how multimodal AI can strengthen conventional computer vision systems by incorporating semantic understanding and visual reasoning, making weapon detection more robust for real-world surveillance and public safety applications.",
       "skills": [
         "Computer Vision",
         "Vision-Language Models",
@@ -32,11 +17,79 @@
       ]
     },
     {
-      "title": "SehatMOK: Makan Olah Kelola \u2013 Smart Nutrition & Food Inventory Platform",
-      "period": "Feb 2026 - Jun 2026",
+      "title": "Eye Blink to Morse Code Decoder",
+      "period": "Oct 2025 – Sep 2026",
+      "role": "Project Leader",
+      "organization": "Telkom University Artificial Intelligence Laboratory",
+      "description": "I served as the Project Leader for Eye Blink Decoder, a computer vision–based system that translates eye blinks into Morse code for hands-free communication using a standard webcam. The project utilizes MediaPipe FaceMesh to extract facial landmarks and compute the Eye Aspect Ratio (EAR) for real-time blink detection, where blink duration is classified into short and long signals and decoded into readable text. My role involved designing the system architecture, leading the algorithm and model selection process, integrating computer vision and decoding logic, and coordinating development and testing to ensure real-time performance and robustness under varying conditions. This project highlights the application of computer vision and human–computer interaction techniques in building assistive communication technologies.",
+      "skills": [
+        "Project Management",
+        "Computer Vision",
+        "MediaPipe FaceMesh",
+        "Eye Blink Detection",
+        "Assistive Technology"
+      ]
+    },
+    {
+      "title": "Performance Evaluation of YOLOv12 Variants for Trash Detection in Mountain Hiking Trail Environments",
+      "period": "Mar 2026 – Sep 2026",
+      "role": "Project Leader & AI/Computer Vision Engineer",
+      "organization": "Telkom University",
+      "description": "As Project Leader & AI/Computer Vision Engineer, I led the development and experimental evaluation of a computer vision system for automated trash detection in mountain hiking trail environments using YOLOv12. I coordinated the project workflow from dataset preparation and methodology design to model training, evaluation, analysis, and research publication. The project integrated UAVVaste, TACO, and a self-collected dataset from Mount Burangrang, West Java, into a unified trash detection dataset, supported by preprocessing and augmentation techniques designed to improve robustness against illumination variation, occlusion, scale changes, and complex natural backgrounds. I trained and evaluated five YOLOv12 variants (N, S, M, L, and X), comparing their performance using mAP@50, mAP@50:95, and mAP@75, while also analyzing computational complexity, inference speed, FLOPs, and memory consumption against YOLOv8 and Faster R-CNN baselines. The experiments achieved a maximum mAP@50 of 0.7820 with YOLOv12M, while YOLOv12L achieved the highest mAP@75 of 0.4782. The resulting research was published as an IEEE conference paper at the 2026 International Conference on Electrical Engineering, Computer Science and Informatics (EECSI 2026).",
+      "skills": [
+        "YOLOv12",
+        "Computer Vision",
+        "Object Detection",
+        "Project Management",
+        "Deep Learning",
+        "IEEE Publication"
+      ]
+    },
+    {
+      "title": "AI Research Collaboration & Lecturer Expertise Mapping System for Telkom University",
+      "period": "Jul 2026 – Aug 2026",
+      "role": "Backend & Data Integration Engineer",
+      "organization": "Fakultas Informatika Telkom University",
+      "description": "Designed and developed an end-to-end AI-powered platform for mapping research expertise and recommending research collaborations among lecturers at the Faculty of Informatics, Telkom University. The system automatically collects academic profiles, publications, citation metrics, and co-authorship data from multiple sources, then analyzes semantic similarities to identify potential research collaborations through AI-based recommendations.\n\nAs the Backend & Data Integration Engineer, I architected and implemented the complete data pipeline, including asynchronous web scraping with Playwright, OpenAlex and SINTA integration, Gemini-powered structured data extraction, PostgreSQL database design, ETL workflows, vector embedding generation using Sentence Transformers, and an AI-based recommendation engine powered by cosine similarity. I also developed the backend APIs and data infrastructure supporting both a Streamlit prototype and a production Laravel dashboard, enabling visualization of lecturer profiles, research statistics, collaboration networks, and AI research expertise across the faculty.",
+      "skills": [
+        "Python",
+        "Laravel",
+        "PostgreSQL",
+        "pgvector",
+        "Playwright",
+        "OpenAlex API",
+        "Google Gemini API",
+        "Sentence Transformers",
+        "Vector Search",
+        "ETL",
+        "Data Engineering",
+        "Back-End Web Development"
+      ]
+    },
+    {
+      "title": "Morse Code to Eye Blink Decoder for Assistive Communication Web App",
+      "period": "Mar 2026 – Jul 2026",
+      "role": "Project Lead, AI Engineer",
+      "organization": "Artificial Intelligence Laboratory (Partner)",
+      "description": "Developed an assistive communication system that translates Morse code generated through eye blinks into natural language text, enabling hands-free communication for individuals with severe speech and motor impairments. This project was completed as part of a Computing Project assignment in collaboration with the Artificial Intelligence Laboratory.\n\nAs Project Lead and AI Engineer, I led project planning and development while designing and implementing the AI-based eye blink detection pipeline. The system combines computer vision and deep learning techniques to accurately classify eye states, distinguish short and long blinks, decode Morse code sequences, and generate meaningful text output in real time.\n\nThis project explores the application of artificial intelligence and human-computer interaction to improve accessibility and communication, demonstrating how AI-driven assistive technologies can help bridge communication barriers for individuals with disabilities.",
+      "skills": [
+        "Computer Vision",
+        "Deep Learning",
+        "Assistive Technology",
+        "Human-Computer Interaction",
+        "Eye Blink Detection",
+        "Morse Code Decoding",
+        "AI for Accessibility",
+        "Python",
+        "Project Management"
+      ]
+    },
+    {
+      "title": "SehatMOK: Makan Olah Kelola – Smart Nutrition & Food Inventory Platform",
+      "period": "Feb 2026 – Jun 2026",
       "role": "Mobile Developer and AI Engineer",
       "organization": "Academic Project",
-      "description": "A health and nutrition management platform helping users track daily nutrition, manage food inventory, discover AI-generated recipes from available ingredients, plan meals, monitor hydration, and organize grocery lists. Integrated Google Gemini AI for recipe generation.",
+      "description": "SehatMok is a health and nutrition management platform that helps users track daily nutrition, manage food inventory, discover AI-generated recipes from available ingredients, plan meals, monitor hydration, and organize grocery lists. The platform consists of web and mobile applications supported by a centralized backend API.\n\nAs a Mobile Developer and AI Engineer, I developed the Flutter mobile application and contributed to the AI-powered recipe recommendation system using Google Gemini. My work included mobile UI implementation, API integration, authentication, offline support, and intelligent recipe generation based on ingredient availability.",
       "skills": [
         "Flutter",
         "Dart",
@@ -44,140 +97,117 @@
         "TypeScript",
         "Prisma",
         "MySQL",
-        "Google Gemini AI"
+        "JWT",
+        "Google Gemini AI",
+        "Mobile Application Development"
+      ]
+    },
+    {
+      "title": "Chipkost: Kost Management Web Based Application",
+      "period": "Sep 2025 – Jan 2026",
+      "role": "UI/UX Designer, Frontend Developer & DevOps",
+      "organization": "Academic Project",
+      "description": "Chipkost is a boarding house (kost) management application that helps property owners manage rentals, tenants, payments, and financial reports through a centralized digital system. The application is designed to simplify daily operations, reduce manual administration, and improve financial transparency.\n\nIn this project, I was responsible for UI/UX design, frontend development, quality assurance, and DevOps. My contributions included designing intuitive user flows and interfaces, implementing responsive frontend features, conducting functional and usability testing, and managing deployment workflows to ensure application stability and reliability. This project strengthened my experience in building end-to-end digital products from design to production.",
+      "skills": [
+        "Web Development",
+        "Front-End Development",
+        "UI/UX Design",
+        "DevOps",
+        "Quality Assurance"
       ]
     },
     {
       "title": "EcoHike: Automatic Trash Monitoring System on Hiking Trail Mobile Application",
-      "period": "Nov 2025",
+      "period": "Nov 2025 – Jan 2026",
       "role": "Project Leader",
       "organization": "Research Project",
-      "description": "Offline-first mobile system for automatic waste detection on mountain hiking trails using YOLOv12. Enables real-time object detection directly on smartphones for hands-free field operation via chest strap without internet connectivity.",
+      "description": "Led a multidisciplinary team to develop EcoHike, an offline-first mobile system for automatic waste detection on mountain hiking trails using YOLOv12. The solution enables real-time object detection directly on smartphones, designed for hands-free field operation via chest strap and capable of functioning without internet connectivity in remote environments.\n\nAs Project Leader, I was responsible for defining the system architecture, coordinating model development and mobile integration, overseeing dataset strategy and evaluation, and ensuring seamless synchronization between offline mobile inference and the backend analytics dashboard. The project evaluates multiple YOLOv12 variants and demonstrates an effective balance between accuracy and efficiency for deployment on resource-constrained devices.\n\nThis project aims to support environmental conservation, data-driven trail management, and scalable AI adoption in real-world outdoor settings.",
       "skills": [
         "YOLOv12",
         "Mobile Integration",
         "Dataset Strategy",
         "Computer Vision",
-        "Offline-first Mobile"
+        "Offline-first Mobile",
+        "Project Management"
       ]
     },
     {
       "title": "AI-Driven Credit Risk Analysis for Microfinance and MSMEs in Indonesia",
-      "period": "Dec 2025",
+      "period": "Dec 2025 – Dec 2025",
       "role": "Project Leader",
       "organization": "Competition Project",
-      "description": "Led a data mining team analyzing credit risk patterns in Indonesia's microfinance and MSME (UMKM) sector, using AI-based approaches to identify risk factors.",
+      "description": "Led a team in a data mining competition focused on credit risk analysis in Indonesia’s microfinance and MSME (UMKM) sector, aiming to support sustainable digital financing growth. The project leveraged data-driven and AI-based approaches to identify risk patterns related to borrower characteristics, business sectors, collateral types, educational background, and regional factors across multiple provinces.\n\nAs Project Leader, I was responsible for defining the analytical strategy, overseeing data preprocessing and feature engineering, guiding model experimentation, and ensuring robust evaluation on imbalanced class distributions using Macro-averaged F1 Score. This metric ensured equal importance across all risk classes, preventing bias toward dominant classes and improving the reliability of credit risk assessment models. The project strengthened my experience in financial data analytics, credit scoring, and applied machine learning for real-world fintech challenges.",
       "skills": [
+        "Machine Learning",
+        "Artificial Intelligence (AI)",
         "Data Mining",
-        "Preprocessing",
+        "Credit Risk Analysis",
         "Feature Engineering",
-        "Model Evaluation",
-        "Credit Risk",
-        "AI"
+        "Project Management"
       ]
     },
     {
       "title": "A Comparative Analysis of YOLOv12 and RF-DETR for Weapon Detection in CCTV Footage",
-      "period": "Feb 2025 - Nov 2025",
+      "period": "Feb 2025 – Nov 2025",
       "role": "Researcher",
-      "organization": "Artificial Intelligence Laboratory",
-      "description": "Research exploring transformer-based RF-DETR against CNN-based YOLOv12 variants for weapon detection on CCTV surveillance footage. Published on IEEE Xplore, 5th ICSINTESA (November 2025).",
+      "organization": "Telkom University Artificial Intelligence Laboratory",
+      "description": "This project explores a transformer-based approach to weapon detection using RF-DETR, evaluating its performance on CCTV surveillance footage. Emphasizing accuracy and real-time capability, the study demonstrates RF-DETR’s potential for enhancing public safety through intelligent threat monitoring. The paper is published on an IEEE, 5th ICSINTESA in November 2025.",
       "skills": [
         "YOLOv12",
         "RF-DETR",
         "Weapon Detection",
         "CCTV Surveillance",
+        "Computer Vision",
+        "Artificial Intelligence (AI)",
         "IEEE Publication"
-      ]
-    },
-    {
-      "title": "MripatAI: Eye-Blink-Based Morse Code Communication with Adaptive Decoding and NLP-Driven Error Correction",
-      "period": "Sep 2025 - Oct 2025",
-      "role": "AI Engineer",
-      "organization": "Digihack AI for Good",
-      "description": "Assistive communication system translating eye blinks to Morse code using YOLOv12-cls for eye classification, adaptive threshold calibration, and IndoBERT for error correction.",
-      "skills": [
-        "YOLOv12-cls",
-        "IndoBERT",
-        "Adaptive Decoding",
-        "NLP Error Correction",
-        "Assistive Communication"
-      ]
-    },
-    {
-      "title": "System of a Road AI (SoaR AI) \u2013 Multimodal AI for Smart City Safety",
-      "period": "Jul 2025 - Sep 2025",
-      "role": "Team Leader & AI Engineer",
-      "organization": "Multimedia Lab",
-      "description": "AI-powered web-based system detecting traffic accidents, emergency vehicles, and fire incidents in real-time. Integrates YOLOv12-M for computer vision and CRNN for audio recognition.",
-      "skills": [
-        "Python",
-        "PyTorch",
-        "OpenCV",
-        "Streamlit",
-        "Altair",
-        "CRNN",
-        "Multimodal AI"
-      ]
-    },
-    {
-      "title": "Implementation of LightGBM for Predicting Formula Milk Sales Based on Sales Database",
-      "period": "Jun 2025 - Jul 2025",
-      "role": "Team Leader",
-      "organization": "Machine Learning Quest",
-      "description": "Sales prediction using LightGBM for inventory planning. Placed #4 in Machine Learning Quest.",
-      "skills": [
-        "LightGBM",
-        "Sales Prediction",
-        "Data Analysis",
-        "Machine Learning"
-      ]
-    },
-    {
-      "title": "Implementation of MobileViTV2 as an Efficient and Affordable Solution for Diagnosing the Severity Level of Diabetic Retinopathy",
-      "period": "Jun 2025 - Jul 2025",
-      "role": "Team Leader",
-      "organization": "Datathon UI",
-      "description": "Implemented MobileViTV2 to classify diabetic retinopathy severity from retinal images for Datathon UI.",
-      "skills": [
-        "MobileViTV2",
-        "Diabetic Retinopathy",
-        "Medical Image Analysis",
-        "Deep Learning"
-      ]
-    },
-    {
-      "title": "Riveria: AI Innovation Based on IoT and Computer Vision for Waste Collection and Sorting in Rivers",
-      "period": "May 2025 - Jul 2025",
-      "role": "AI Engineer",
-      "organization": "Samsung Solve for Tomorrow",
-      "description": "AI-powered environmental solution integrating IoT and computer vision using YOLOv12 and sensors. Top 200 in Samsung Solve for Tomorrow.",
-      "skills": [
-        "YOLOv12",
-        "IoT Sensors",
-        "Environmental Tech",
-        "Computer Vision"
-      ]
-    },
-    {
-      "title": "Assistify \u2013 Digital Personal Assistant Web Application",
-      "period": "Apr 2025 - Jun 2025",
-      "role": "Team Leader",
-      "organization": "Academic Project",
-      "description": "Web productivity application containing text & voice notes, to-do list, reminders, alarm, and journal.",
-      "skills": [
-        "Java Servlets",
-        "JSP",
-        "HTML/CSS",
-        "JavaScript",
-        "Apache Tomcat",
-        "MVC Architecture"
       ]
     }
   ],
   "posts": [
     {
+      "time": "5 days ago",
+      "content": "Grateful to have presented our research at ICoDSA 2026!\n\nIt was a great experience participating as an Author at the 9th International Conference on Data Science and its Applications (ICoDSA 2026), held on 21–22 September 2026.\n\nOur paper, “An Eye Blink Morse Code Decoder with Hybrid Vision Models and IndoBERT,” presents an assistive communication system that translates eye blinks into Morse code and converts them into readable Indonesian text. The approach combines MediaPipe FaceMesh and YOLOv26-cls for hybrid eye-state detection, personalized calibration for individual blinking patterns, and IndoBERT for language-aware text refinement.\n\nHuge thanks to my fellow authors Gilbert Lumbantoruan, Muhammad Rifqi Setiawan, Ahmad Taufiq Nur Rohman, and Parman Sukarno for the collaboration and hard work throughout this research.\n\nSpecial thanks to AI Lab Telkom University, and especially Ahmad Taufiq Nur Rohman and Parman Sukarno, for the guidance, support, and encouragement throughout the research and publication process.\n\n#ICoDSA2026 #Research #ArtificialIntelligence #ComputerVision #NLP #MachineLearning #TelkomUniversity #AIResearch",
+      "category": "Conference & Publication",
+      "images": [
+        "/images/linkedin/icodsa_1.jpg",
+        "/images/linkedin/icodsa_2.jpg",
+        "/images/linkedin/icodsa_3.jpg",
+        "/images/linkedin/icodsa_4.jpg",
+        "/images/linkedin/icodsa_5.jpg"
+      ]
+    },
+    {
+      "time": "1 week ago",
+      "content": "I’m excited to share that I’ve received a Hak Kekayaan Intelektual (HKI) / Copyright Registration for our project, “Dashboard Visualisasi Riset dan Keahlian Dosen Berbasis AI.” 🎉\n\nThis project was developed as part of my internship at the School of Computing, Telkom University, where I had the opportunity to work on a project involving AI-based data visualization and the presentation of research and lecturer expertise.\n\nThe copyright has been officially registered as a Computer Program, with Universitas Telkom as the copyright holder and myself listed as one of the creators.\n\nI’m grateful to everyone who contributed throughout the development process, especially Mr. Nur Ghaniaviyanto Ramadhan for his guidance, supervision, and support throughout the internship.\n\nThank you to the entire team for the collaboration and learning experience. This has been a valuable part of my journey in applying AI, data, and software development to a real-world academic environment.\n\nLooking forward to building more impactful projects ahead! 🚀\n\n#TelkomUniversity #SchoolOfComputing #Internship #HKI #ArtificialIntelligence #AI #DataVisualization #SoftwareDevelopment #MachineLearning #StudentDeveloper",
+      "category": "Academic & Intellectual Property",
+      "images": [
+        "/images/linkedin/hki_dashboard_1.jpg"
+      ]
+    },
+    {
+      "time": "3 weeks ago",
+      "content": "I’m grateful to have had the opportunity to represent our team as a Presenter at the 13th International Conference on Electrical Engineering, Computer Science and Informatics (EECSI 2026).\n\nI presented our work entitled “Performance Evaluation of YOLOv12 Variants for Trash Detection in Mountain Hiking Trail Environments.” The research explores the performance of different YOLOv12 variants for detecting trash in challenging mountain hiking trail environments.\n\nThis experience was a great opportunity to not only share our work, but also to receive valuable feedback and learn from researchers working in different areas of computer science and engineering.\n\nA huge thank you to my research team:\nGilbert Lumbantoruan\nSyahdan Rizqi Ruhendy\nSabrina Adinda Sari\nFaidhil Nugrah Ramadhan\n\nThank you for the collaboration, discussions, and hard work throughout the research process. This achievement would not have been possible without the team.\n\nAlso grateful to Telkom University for the support and to the EECSI 2026 for providing us with the opportunity to present our work.\n\nLooking forward to continuing to learn, research, and contribute to the field of AI and computer vision.\n\n#IEEE #TelkomUniversity #Research #ComputerVision #ArtificialIntelligence #YOLOv12 #DeepLearning #ObjectDetection #MachineLearning",
+      "category": "Conference & Publication",
+      "images": [
+        "/images/linkedin/eecsi_1.jpg",
+        "/images/linkedin/eecsi_2.jpg",
+        "/images/linkedin/eecsi_3.jpg",
+        "/images/linkedin/eecsi_4.jpg"
+      ]
+    },
+    {
       "time": "1 month ago",
+      "content": "I’m happy to share that I’ve completed my internship at the School of Computing, Faculty of Informatics, Telkom University, under the supervision of Dr. Nur Ghaniaviyanto Ramadhan, Leader of the School of Computing AI Task Force (Satgas AI Fakultas Informatika).\n\nDuring my internship, I worked as a Backend & Data Integration Engineer, contributing to a research expertise and collaboration platform for Telkom University. I developed Python-based data scraper pipelines using Playwright, OpenAlex, SINTA, and LLM integration, designed PostgreSQL schemas and Laravel Eloquent models, implemented semantic collaboration recommendations using Sentence Transformers and pgvector, and developed automated data import and Excel/PDF export features. I also contributed to expertise mapping, publication analytics, and collaboration network visualization.\n\nI’m also grateful that Dr. Ghaniaviyanto registered our platform as HAKI (Hak Kekayaan Intelektual).\n\nAlthough I initially didn’t expect to do my internship internally on campus, it turned out to be a valuable experience where I gained practical skills in backend development, data engineering, AI, and research-oriented system development.\n\nThank you to Dr. Ghaniaviyanto and everyone at the School of Computing and Faculty of Informatics who supported and guided me throughout this journey!\n\n#Internship #TelkomUniversity #DataEngineering #BackendDevelopment #ArtificialIntelligence #Python #Research",
+      "category": "Internship & Career",
+      "images": [
+        "/images/linkedin/internship_1.jpg",
+        "/images/linkedin/internship_2.jpg",
+        "/images/linkedin/internship_3.jpg",
+        "/images/linkedin/internship_4.jpg"
+      ]
+    },
+    {
+      "time": "4 months ago",
       "content": "As my undergraduate journey almost comes to an end, I want to take a moment to express my gratitude to everyone who trusted me with opportunities to learn and grow outside the classroom.\nA special thank you to Himpunan Mahasiswa Informatika for entrusting me with various events throughout my university years. From serving as a Division Staff in Carnival 2024 and FORTRAN 2025 to being trusted twice as a Division Head in Carnival 2025 Vol. 1 and Vol. 2, each experience taught me valuable lessons in leadership, teamwork, responsibility, and commitment.\nI am also grateful to the Multimedia Laboratory for trusting me to become the Master of Ceremony for GameJAMM 2026, something I had never done before. What started as an unfamiliar challenge became one of the most memorable opportunities that pushed me beyond my comfort zone and helped me grow both personally and professionally.\nThank you to everyone who believed in me and gave me the chance to contribute. As this chapter comes to a close, I will carry these experiences, lessons, and memories with me into the next stage of my journey.\n#Grateful\n \n#Leadership\n \n#StudentLife\n \n#TelkomUniversity",
       "category": "Academic & Leadership",
       "images": [
@@ -188,8 +218,8 @@
       ]
     },
     {
-      "time": "4 months ago",
-      "content": "I\u2019m excited to share that our paper \u201cA Comparative Analysis of YOLOv12 and RF-DETR for Weapon Detection in CCTV Footage\u201d has been published on IEEE Xplore by the IEEE.\nThis work explores the challenge of automated weapon detection in CCTV surveillance, where occlusion, varying viewpoints, and low-resolution imagery often impact detection performance. We compared YOLOv12 variants with the transformer-based RF-DETR model using challenging CCTV footage and evaluated generalization on an unseen camera viewpoint.\nThe results show that RF-DETR outperforms all YOLOv12 variants, highlighting the stronger robustness of transformer-based architectures for real-world surveillance scenarios.\nSpecial thanks to the team at the AI Laboratory for the collaboration and support throughout this research.\n \nMuhammad Syafiq Aqilla\n \nArnoldus Bryan Hendry\n \nMuhammad Rafly Arjasubrata\nOur paper is available here:\n \nhttps://lnkd.in/g7seGJpK\n#ComputerVision\n \n#DeepLearning\n \n#ObjectDetection\n \n#AIResearch\n \n#IEEE\n \n#YOLO\n \n#Transformers\n \n#PublicSafety",
+      "time": "6 months ago",
+      "content": "I’m excited to share that our paper “A Comparative Analysis of YOLOv12 and RF-DETR for Weapon Detection in CCTV Footage” has been published on IEEE Xplore by the IEEE.\nThis work explores the challenge of automated weapon detection in CCTV surveillance, where occlusion, varying viewpoints, and low-resolution imagery often impact detection performance. We compared YOLOv12 variants with the transformer-based RF-DETR model using challenging CCTV footage and evaluated generalization on an unseen camera viewpoint.\nThe results show that RF-DETR outperforms all YOLOv12 variants, highlighting the stronger robustness of transformer-based architectures for real-world surveillance scenarios.\nSpecial thanks to the team at the AI Laboratory for the collaboration and support throughout this research.\n \nMuhammad Syafiq Aqilla\n \nArnoldus Bryan Hendry\n \nMuhammad Rafly Arjasubrata\nOur paper is available here:\n \nhttps://lnkd.in/g7seGJpK\n#ComputerVision\n \n#DeepLearning\n \n#ObjectDetection\n \n#AIResearch\n \n#IEEE\n \n#YOLO\n \n#Transformers\n \n#PublicSafety",
       "category": "Research & Publication",
       "images": [
         "/images/linkedin/paper_1.jpg",
@@ -205,7 +235,7 @@
       ]
     },
     {
-      "time": "8 months ago",
+      "time": "11 months ago",
       "content": "Feeling incredibly grateful and excited for what's ahead!\nI'm thrilled to announce that I have been entrusted to continue my role as a Researcher at the Focus Group of AI Laboratory Telkom University for the 2025/2026 academic year. A huge thank you to the lab for the continued trust and support.\nThis news comes as my team and I celebrate a key achievement from my tenure in 2024/2025. Our research paper, \"A Comparative Analysis of YOLOv12 and RF-DETR for Weapon Detection in CCTV Footage,\" has been accepted for publication at the 2025 5th International Conference of Science and Information Technology in Smart Administration (ICSINTESA), an IEEE-sponsored conference.\nIn this work, we explored and compared cutting-edge AI models to enhance public safety through automated weapon detection in surveillance systems. This accomplishment would not have been possible without my brilliant co-authors:\n \nMuhammad Syafiq Aqilla\n,\n \nArnoldus Bryan Hendry\n,\n \nMuhammad Rafly Arjasubrata\n, and our esteemed mentor, Mr. Mahmud Dwi Sulistiyo.\nDeepest gratitude to AI Laboratory and Telkom University for providing the resources and environment to conduct impactful research. Looking forward to another year of learning and innovation!\n#AI\n \n#Research\n \n#IEEE\n \n#ICSINTESA2025\n \n#ComputerVision\n \n#ObjectDetection\n \n#TelkomUniversity\n \n#Publication\n \n#YOLOv12\n \n#DETR\n \n#AcademicExcellence",
       "category": "Research & Academic",
       "images": [
@@ -215,8 +245,8 @@
       ]
     },
     {
-      "time": "8 months ago",
-      "content": "\ud83c\udf89 Proud to be a Finalist in the Intelligent Expression & Computational Thinking for Research and Application (INTELLECTRA) 2025\u00a0for Machine Learning Quest (MLQ) category \u2014 one of the most competitive and prestigious data-driven challenges in Indonesia!\nAlongside my incredible team, Tim Anomali, we tackled complex financial datasets and built quantitative models that pushed our analytical skills to the next level. Reaching the finals among top talents from across the country has been an exciting journey full of learning and innovation.\nGrateful to the organizers and mentors, and looking forward to applying what we\u2019ve learned to real-world problems. Onward and upward! \ud83d\ude80\ud83d\udcca\n#DataScience\n \n#CompetitionFinalist\n \n#TeamAnomali\n \n#LearningNeverStops",
+      "time": "1 year ago",
+      "content": "🎉 Proud to be a Finalist in the Intelligent Expression & Computational Thinking for Research and Application (INTELLECTRA) 2025 for Machine Learning Quest (MLQ) category — one of the most competitive and prestigious data-driven challenges in Indonesia!\nAlongside my incredible team, Tim Anomali, we tackled complex financial datasets and built quantitative models that pushed our analytical skills to the next level. Reaching the finals among top talents from across the country has been an exciting journey full of learning and innovation.\nGrateful to the organizers and mentors, and looking forward to applying what we’ve learned to real-world problems. Onward and upward! 🚀📊\n#DataScience\n \n#CompetitionFinalist\n \n#TeamAnomali\n \n#LearningNeverStops",
       "category": "Competition",
       "images": [
         "/images/linkedin/intellectra_1.jpg",
@@ -227,7 +257,7 @@
     },
     {
       "time": "11 months ago",
-      "content": "\ud83d\udcf8 Capturing Moments, Creating Memories \ud83c\udf93\nAs the Head of Documentation & Publication for Carnival 2025, I had the incredible opportunity to lead a team of talented photographers in preserving the essence of the event. From fleeting expressions to grand celebrations, every snapshot tells a story\u2014one that reflects the spirit and energy of our campus community.\nGrateful for the teamwork, the vision, and the passion that fueled this project. Here's to the power of storytelling through the lens! \ud83d\udcf7\u2728\n#Photography\n \n#CampusEvent\n \n#StorytellingThroughPhotos\n \n#Leadership\n \n#Teamwork",
+      "content": "📸 Capturing Moments, Creating Memories 🎓\nAs the Head of Documentation & Publication for Carnival 2025, I had the incredible opportunity to lead a team of talented photographers in preserving the essence of the event. From fleeting expressions to grand celebrations, every snapshot tells a story—one that reflects the spirit and energy of our campus community.\nGrateful for the teamwork, the vision, and the passion that fueled this project. Here's to the power of storytelling through the lens! 📷✨\n#Photography\n \n#CampusEvent\n \n#StorytellingThroughPhotos\n \n#Leadership\n \n#Teamwork",
       "category": "Academic & Leadership",
       "images": [
         "/images/linkedin/carnival_1.jpg",
